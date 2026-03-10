@@ -144,6 +144,9 @@ importers:
       sonner:
         specifier: ^1.7.1
         version: 1.7.4(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      split-type:
+        specifier: ^0.3.4
+        version: 0.3.4
       tailwind-merge:
         specifier: ^2.5.5
         version: 2.6.1
@@ -2006,6 +2009,9 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
+  split-type@0.3.4:
+    resolution: {integrity: sha512-otEk9vnD8qwfLsk3Lx0gz+qRkNIJCx0mlyL47ImP/DjMuV39d75Lpfwjn9fHteDRz0aoOblSzQjSNT9+Sswxcg==}
+
   tailwind-merge@2.6.1:
     resolution: {integrity: sha512-Oo6tHdpZsGpkKG88HJ8RR1rg/RdnEkQEfMoEk2x1XRI3F1AxeU+ijRXpiVUF4UbLfcxxRGw6TbUINKYdWVsQTQ==}
 
@@ -3797,6 +3803,8 @@ snapshots:
       react-dom: 19.2.3(react@19.2.3)
 
   source-map-js@1.2.1: {}
+
+  split-type@0.3.4: {}
 
   tailwind-merge@2.6.1: {}
 

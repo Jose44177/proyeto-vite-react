@@ -3,6 +3,30 @@ import { Link } from "react-router-dom"
 import { Play, Plus } from "lucide-react"
 import { Button } from "./ui/button"
 
+let sharedObserver: IntersectionObserver | null = null
+const observerCallbacks = new WeakMap<Element, () => void>()
+
+function getObserver() {
+  if (typeof window === "undefined") return null
+  if (!sharedObserver) {
+    sharedObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const cb = observerCallbacks.get(entry.target)
+            if (cb) {
+              cb()
+              sharedObserver?.unobserve(entry.target)
+            }
+          }
+        })
+      },
+      { threshold: 0.2 }
+    )
+  }
+  return sharedObserver
+}
+
 interface GenreCardProps {
   genre: {
     id: string
@@ -19,25 +43,41 @@ interface GenreCardProps {
 export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
-
-  const observerCallback = useCallback(
-    (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      })
-    },
-    []
-  )
+  const [isStableActive, setIsStableActive] = useState(isActive)
+  
+  // Utilizamos un ref para saber si es el renderizado inicial y aplicar el delay de cascada
+  const isInitialMount = useRef(true)
 
   useEffect(() => {
-    const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.2,
-    })
-    if (cardRef.current) observer.observe(cardRef.current)
-    return () => observer.disconnect()
-  }, [observerCallback])
+    let timeout: ReturnType<typeof setTimeout>
+    if (isActive) {
+      timeout = setTimeout(() => {
+        setIsStableActive(true)
+      }, 150) // Retrasamos 150ms las animaciones internas pesadas
+    } else {
+      setIsStableActive(false) // Desactivar al instante
+    }
+    return () => clearTimeout(timeout)
+  }, [isActive])
+
+  useEffect(() => {
+    const el = cardRef.current
+    if (el) {
+      observerCallbacks.set(el, () => setIsVisible(true))
+      getObserver()?.observe(el)
+    }
+    
+    // Una vez que el componente se monta y pasa un poco de tiempo, quitamos el flag de "montaje inicial"
+    // para que futuras interacciones no tengan el delay en cascada.
+    const timeout = setTimeout(() => {
+      isInitialMount.current = false
+    }, 1000)
+
+    return () => {
+      if (el) getObserver()?.unobserve(el)
+      clearTimeout(timeout)
+    }
+  }, [])
 
   return (
     <div
@@ -53,29 +93,34 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
         }
       }}
       className={`
-        group relative w-full overflow-hidden rounded-lg
-        transition-all duration-700 ease-out
+        group relative w-full overflow-hidden rounded-lg m-3
+        transition-all duration-500 ease-in-out
+        transform-gpu
         ${isActive ? "h-[420px] lg:h-[400px]" : "h-[110px] lg:h-[130px] cursor-pointer"}
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
       `}
       style={{
-        transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
+        transitionDelay: (isVisible && isInitialMount.current && index < 6) ? `${index * 100}ms` : "0ms",
       }}
     >
       {/* Background Image with Ken Burns */}
       <div
         className={`
-          absolute inset-0 transition-transform duration-[1.2s] ease-out
-          ${isActive ? "scale-100" : "scale-110"}
+          absolute inset-0 transition-transform transform-gpu will-change-transform
+          duration-[1.2s] ease-in-out
+          ${isStableActive ? "scale-100" : "scale-110"}
         `}
       >
         <img
           src={genre.image}
+          loading={index < 6 ? "eager" : "lazy"}
+          decoding="async"
           // alt={`${genre.name} genre backdrop`}
           className={`
-            absolute inset-0 w-full h-full object-cover transition-all duration-[5s] ease-in-out
-            ${isActive ? "animate-ken-burns" : ""}
-            ${!isActive ? "brightness-[0.3] saturate-50" : "brightness-[0.5]"}
+            absolute inset-0 w-full h-full object-cover transition-all
+            transform-gpu will-change-transform duration-[10s] ease-in-out
+            ${isStableActive ? "animate-ken-burns" : ""}
+            ${!isStableActive ? "brightness-[0.3] saturate-50" : "brightness-[0.5]"}
           `}
         />
       </div>
@@ -83,14 +128,6 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
       {/* Cinematic Gradient Overlays */}
       <div className="absolute inset-0 bg-linear-to-r from-background/90 via-background/40 to-transparent z-1" />
       <div className="absolute inset-0 bg-linear-to-t from-background/80 via-transparent to-background/30 z-1" />
-
-      {/* Letterbox bars for cinematic feel */}
-      {/* {isActive && (
-        <>
-          <div className="absolute top-0 left-0 right-0 h-4 bg-background/60 z-2 animate-fade-in" />
-          <div className="absolute bottom-0 left-0 right-0 h-4 bg-background/60 z-2 animate-fade-in" />
-        </>
-      )} */}
 
       {/* Film grain overlay */}
       <div
@@ -109,7 +146,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
             <span
               className={`
                 font-display text-primary/40 leading-none block
-                transition-all duration-500
+                transition-all duration-500 ease-in-out
                 ${isActive ? "text-7xl md:text-8xl mb-3" : "text-4xl md:text-5xl mb-0"}
               `}
             >
@@ -120,7 +157,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
             <h2
               className={`
                 font-display tracking-wider leading-none text-foreground
-                transition-all duration-500
+                transition-all duration-500 ease-in-out
                 ${isActive ? "text-5xl md:text-7xl" : "text-2xl md:text-3xl"}
               `}
             >
@@ -130,8 +167,8 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
             {/* Tagline - only visible when active */}
             <div
               className={`
-                overflow-hidden transition-all duration-500
-                ${isActive ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0 mt-0"}
+                overflow-hidden transition-all duration-500 ease-in-out
+                ${isStableActive ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0 mt-0"}
               `}
             >
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-lg">
@@ -148,11 +185,11 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
             {/* Action Buttons - only visible when active */}
             <div
               className={`
-                flex items-center gap-3 overflow-hidden transition-all duration-500
-                ${isActive ? "max-h-20 opacity-100 mt-5" : "max-h-0 opacity-0 mt-0"}
+                flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out transform-gpu
+                ${isStableActive ? "max-h-20 opacity-100 mt-5" : "max-h-0 opacity-0 mt-0"}
               `}
             >
-              <Link to={`/categoria/${genre.id}`}>
+              <Link to={`/genre/${genre.id}`}>
                 <Button className="tracking-wide rounded-sm">
                   <Play className="w-4 h-4 fill-current" />
                   Explore
@@ -166,10 +203,10 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
           </div>
 
           {/* Right: Decorative accent line */}
-          {isActive && (
-            <div className="hidden md:flex flex-col items-center gap-2 animate-fade-in">
+          {isStableActive && (
+            <div className="hidden md:flex flex-col items-center animate-fade-in transform-gpu">
               <div className="w-px h-20 bg-linear-to-b from-transparent via-primary to-transparent" />
-              <span className="text-[10px] text-muted-foreground tracking-[0.3em] rotate-90 origin-center whitespace-nowrap">
+              <span className="text-[10px] text-muted-foreground tracking-[0.3em] [writing-mode:vertical-rl]">
                 {genre.name.toUpperCase()}
               </span>
               <div className="w-px h-20 bg-linear-to-b from-transparent via-primary to-transparent" />
@@ -180,7 +217,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
 
       {/* Hover Indicator for collapsed items */}
       {!isActive && (
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 z-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute right-6 top-1/2 -translate-y-1/2 z-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
           <div className="w-8 h-8 rounded-full border border-foreground/30 flex items-center justify-center">
             <Play className="w-3 h-3 text-foreground fill-current" />
           </div>
@@ -188,9 +225,9 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
       )}
 
       {/* Active Glow Effect */}
-      {/* {isActive && (
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent z-4 animate-pulse-glow" />
-      )} */}
+      {isStableActive && (
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent z-4 animate-pulse-glow duration-[10s] ease-in-out tansform-gpu" />
+      )}
     </div>
   )
 }

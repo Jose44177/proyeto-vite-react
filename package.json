@@ -52,6 +52,7 @@
     "react-router-dom": "^7.1.5",
     "recharts": "2.15.0",
     "sonner": "^1.7.1",
+    "split-type": "^0.3.4",
     "tailwind-merge": "^2.5.5",
     "tailwindcss": "^4.0.0",
     "tailwindcss-animate": "^1.0.7",
