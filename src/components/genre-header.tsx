@@ -38,7 +38,7 @@ export function GenreHeader() {
           </nav>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-5">
           <button
             onClick={() => setIsMuted(!isMuted)}
             className="w-9 h-9 rounded-full border border-foreground/20 flex items-center justify-center hover:border-foreground/40 transition-colors cursor-pointer"
