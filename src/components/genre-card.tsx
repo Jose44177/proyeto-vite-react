@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom"
 import { Play, Plus } from "lucide-react"
 import { Button } from "./ui/button"
+import type { Genre } from "@/types/genre"
 
 let sharedObserver: IntersectionObserver | null = null
 const observerCallbacks = new WeakMap<Element, () => void>()
@@ -28,13 +29,7 @@ function getObserver() {
 }
 
 interface GenreCardProps {
-  genre: {
-    id: string
-    name: string
-    tagline: string
-    image: string
-    movieCount: number
-  }
+  genre: Genre
   isActive: boolean
   index: number
   onClick: () => void
@@ -120,7 +115,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
             absolute inset-0 w-full h-full object-cover transition-all
             transform-gpu will-change-transform duration-[10s] ease-in-out
             ${isStableActive ? "animate-ken-burns" : ""}
-            ${!isStableActive ? "brightness-[0.3] saturate-50" : "brightness-[0.5]"}
+            ${!isStableActive ? "brightness-[0.4] saturate-50" : "brightness-[0.7]"}
           `}
         />
       </div>
@@ -225,9 +220,9 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
       )}
 
       {/* Active Glow Effect */}
-      {isStableActive && (
+      {/* {isStableActive && (
         <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent z-4 animate-pulse-glow duration-[10s] ease-in-out tansform-gpu" />
-      )}
+      )} */}
     </div>
   )
 }
