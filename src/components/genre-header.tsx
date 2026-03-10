@@ -15,18 +15,26 @@ export function GenreHeader() {
             </h1>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
-            <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
-              Genres
-            </span>
-            <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-              Trending
-            </span>
-            <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-              New
-            </span>
-            <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-              My List
-            </span>
+            <Link to={'/genres'}>
+              <span className="text-xs tracking-[0.2em] uppercase text-primary font-medium">
+                Genres
+              </span>
+            </Link>
+            <Link to={'/trending'}>
+              <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                Trending
+              </span>
+            </Link>
+            <Link to={'/new'}>
+              <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                New
+              </span>
+            </Link>
+            <Link to={'/mylist'}>
+              <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                My List
+              </span>
+            </Link>
           </nav>
         </div>
 
