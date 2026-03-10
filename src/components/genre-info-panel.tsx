@@ -1,6 +1,8 @@
 import { ChevronDown, ChevronUp } from "lucide-react"
 import { LineReveal } from "./ui/line-reveal"
 import type { Genre } from "@/types/genre"
+import { GenreScrollbar } from "./genre-scrollbar"
+import { Button } from "./ui/button"
 
 interface GenreInfoPanelProps {
   genres: Genre[]
@@ -63,23 +65,25 @@ export function GenreInfoPanel({ genres, activeIndex, stableActiveIndex, onNavig
         </div>
 
         {/* Vertical Navigation */}
-        <div className="flex flex-col gap-2 pt-4">
-          <button
+        <div className="flex flex-col m-5 gap-2 pt-4">
+          <Button
+            variant="navcircle"
+            size="nav"
             onClick={() => onNavigate("up")}
             disabled={activeIndex === 0}
-            className="w-10 h-10 rounded-full border border-foreground/20 flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all disabled:opacity-20 disabled:cursor-not-allowed cursor-pointer"
             aria-label="Previous genre"
           >
             <ChevronUp className="w-4 h-4 text-foreground" />
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="navcircle"
+            size="nav"
             onClick={() => onNavigate("down")}
             disabled={activeIndex === genres.length - 1}
-            className="w-10 h-10 rounded-full border border-foreground/20 flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all disabled:opacity-20 disabled:cursor-not-allowed cursor-pointer"
             aria-label="Next genre"
           >
             <ChevronDown className="w-4 h-4 text-foreground" />
-          </button>
+          </Button>
         </div>
       </div>
     </div>

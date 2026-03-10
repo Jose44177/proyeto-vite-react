@@ -2,9 +2,9 @@ import { GenreCard } from "./genre-card"
 import { GenreBackground } from "./genre-background"
 import { GenreHeader } from "./genre-header"
 import { GenreInfoPanel } from "./genre-info-panel"
-import { GenrePagination } from "./genre-pagination"
 import { useGenres } from "@/hooks/use-genres"
 import { useCarouselNavigation } from "@/hooks/use-carousel-navigation"
+import { GenreScrollbar } from "./genre-scrollbar"
 
 export function GenreCarousel() {
   const { genres } = useGenres()
@@ -40,7 +40,18 @@ export function GenreCarousel() {
         />
 
         {/* Right Panel: Vertical Carousel */}
-        <div className="flex-1 flex items-center px-4 md:px-8 lg:px-12">
+        <div className="flex-1 flex items-center justify-center px-4 md:px-8 lg:px-12">
+
+          {/* Scrollbar flotante */}
+          <div className="flex items-center">
+            <GenreScrollbar
+              genres={genres}
+              activeIndex={activeIndex}
+              orientation="vertical"
+            />
+          </div>
+
+          {/* Contenedor de scroll interno */}
           <div
             ref={scrollContainerRef}
             className="w-full max-w-3xl h-full mx-auto relative overflow-y-auto py-4 scrollbar-hide"
@@ -62,15 +73,9 @@ export function GenreCarousel() {
         </div>
       </div>
 
-      {/* Bottom Cinematic Bars */}
-      <GenrePagination
-        genres={genres}
-        activeIndex={activeIndex}
-        onSelect={setActiveIndex}
-      />
-
-      {/* Anamorphic Lens Flare (subtle) */}
-      <div className="absolute top-[87px] w-full h-px bg-linear-to-r from-primary/5 via-primary/90 to-primary/5 z-50 pointer-events-none animate-pulse-glow transform-gpu" />
+      <span className=" absolute bottom-10 right-20 z-50 text-[10px] tracking-[0.3em] uppercase text-muted-foreground hidden sm:block">
+        Scroll to explore
+      </span>
     </div>
   )
 }

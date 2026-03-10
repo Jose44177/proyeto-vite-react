@@ -66,7 +66,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
     // para que futuras interacciones no tengan el delay en cascada.
     const timeout = setTimeout(() => {
       isInitialMount.current = false
-    }, 1000)
+    }, 50)
 
     return () => {
       if (el) getObserver()?.unobserve(el)
@@ -78,7 +78,6 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
     <div
       ref={cardRef}
       onClick={onClick}
-      role="button"
       tabIndex={0}
       aria-label={`Select ${genre.name} genre`}
       onKeyDown={(e) => {
@@ -95,7 +94,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
       `}
       style={{
-        transitionDelay: (isVisible && isInitialMount.current && index < 6) ? `${index * 100}ms` : "0ms",
+        transitionDelay: (isInitialMount.current && index < 6) ? `${index * 100}ms` : "0ms",
       }}
     >
       {/* Background Image with Ken Burns */}
@@ -212,17 +211,12 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
 
       {/* Hover Indicator for collapsed items */}
       {!isActive && (
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 z-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+        <div className="absolute right-10 top-1/2 -translate-y-1/2 z-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
           <div className="w-8 h-8 rounded-full border border-foreground/30 flex items-center justify-center">
             <Play className="w-3 h-3 text-foreground fill-current" />
           </div>
         </div>
       )}
-
-      {/* Active Glow Effect */}
-      {/* {isStableActive && (
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary to-transparent z-4 animate-pulse-glow duration-[10s] ease-in-out tansform-gpu" />
-      )} */}
     </div>
   )
 }

@@ -14,6 +14,8 @@ const buttonVariants = cva(
           'bg-destructive text-destructive-foreground hover:bg-destructive/90',
         outline:
           'border border-foreground/20 text-foreground hover:border-foreground/40',
+        navcircle:
+          "rounded-full border border-foreground/20 hover:border-primary hover:bg-primary/10 transition-all disabled:opacity-20 disabled:cursor-not-allowed",
         secondary:
           'bg-secondary text-secondary-foreground hover:bg-secondary/80',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
@@ -24,6 +26,7 @@ const buttonVariants = cva(
         sm: 'h-9 rounded-md px-3',
         lg: 'h-11 rounded-md px-8',
         icon: 'h-10 w-10',
+        nav: 'h-10 w-10 p-0',
       },
     },
     defaultVariants: {
@@ -35,8 +38,8 @@ const buttonVariants = cva(
 
 export interface ButtonProps
   extends
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  React.ButtonHTMLAttributes<HTMLButtonElement>,
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean
 }
 
