@@ -1,10 +1,10 @@
 import { GenreCard } from "./genre-card"
 import { GenreBackground } from "./genre-background"
-import { GenreHeader } from "./genre-header"
 import { GenreInfoPanel } from "./genre-info-panel"
 import { useGenres } from "@/hooks/use-genres"
 import { useCarouselNavigation } from "@/hooks/use-carousel-navigation"
 import { GenreScrollbar } from "./genre-scrollbar"
+import { Header } from "../header"
 
 export function GenreCarousel() {
   const { genres } = useGenres()
@@ -27,7 +27,7 @@ export function GenreCarousel() {
       />
 
       {/* Top Navigation Bar */}
-      <GenreHeader />
+      <Header fixed={false} />
 
       {/* Main Content Area */}
       <div className="relative z-10 flex h-[calc(100vh-88px)]">

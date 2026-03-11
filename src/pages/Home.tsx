@@ -1,21 +1,21 @@
 import { useState, useEffect, useRef, useCallback } from "react"
-import { HomeHeader } from "@/components/home/home-header"
+import { Header } from "@/components/header"
 import { HeroSection } from "@/components/home/hero-section"
 import { MovieRow } from "@/components/home/movie-row"
 import { TrendingSection } from "@/components/home/trending-section"
 import { GenrePreview } from "@/components/home/genre-preview"
 import { CtaBanner } from "@/components/home/cta-banner"
 import { useAuth } from "@/hooks/use-auth"
-import { 
-  NEW_RELEASES, 
-  CONTINUE_WATCHING, 
-  MY_LIST, 
-  EXTRA_COLLECTIONS 
+import {
+  NEW_RELEASES,
+  CONTINUE_WATCHING,
+  MY_LIST,
+  EXTRA_COLLECTIONS
 } from "@/data/movies"
 
 export default function Home() {
   const { isLoggedIn } = useAuth()
-  
+
   // States for infinite scroll
   const [visibleExtraSections, setVisibleExtraSections] = useState(2)
   const [isLoading, setIsLoading] = useState(false)
@@ -55,14 +55,14 @@ export default function Home() {
 
   return (
     <main className="bg-background text-foreground min-h-screen pb-20 overflow-x-hidden">
-      <HomeHeader />
+      <Header />
 
       {/* Hero Spotlight */}
       <HeroSection />
 
       {/* Main Content Area */}
       <div className="relative z-10 -mt-16 md:-mt-32 space-y-12 pb-20">
-        
+
         {/* Conditional Rows for Authenticated Users */}
         {isLoggedIn && (
           <>
@@ -73,39 +73,39 @@ export default function Home() {
 
         {/* Global Sections */}
         <TrendingSection />
-        
+
         {!isLoggedIn && <CtaBanner />}
 
         <MovieRow title="Recién Añadidas" movies={NEW_RELEASES} />
-        
+
         <GenrePreview />
 
         {!isLoggedIn && (
-           <div className="relative py-12 px-6 md:px-12">
-             <div className="h-px bg-linear-to-r from-transparent via-primary/30 to-transparent w-full" />
-             <p className="text-center font-display text-2xl tracking-[0.2em] text-muted-foreground mt-8 uppercase opacity-50">
-               Únete a CINEVO para desbloquear todo el catálogo
-             </p>
-           </div>
+          <div className="relative py-12 px-6 md:px-12">
+            <div className="h-px bg-linear-to-r from-transparent via-primary/30 to-transparent w-full" />
+            <p className="text-center font-display text-2xl tracking-[0.2em] text-muted-foreground mt-8 uppercase opacity-50">
+              Únete a CINEVO para desbloquear todo el catálogo
+            </p>
+          </div>
         )}
 
         {/* Infinite Scroll Sections */}
         {EXTRA_COLLECTIONS.slice(0, visibleExtraSections).map((collection, idx) => (
-          <MovieRow 
-            key={`${collection.title}-${idx}`} 
-            title={collection.title} 
-            movies={collection.movies} 
+          <MovieRow
+            key={`${collection.title}-${idx}`}
+            title={collection.title}
+            movies={collection.movies}
           />
         ))}
 
         {/* Loading Indicator / Sentinel */}
         <div ref={observerTarget} className="w-full flex justify-center py-10 opacity-0 pointer-events-none fade-in">
-           {isLoading && (
-             <div className="flex flex-col items-center gap-4">
-               <div className="w-10 h-10 border-2 border-primary border-t-transparent rounded-full animate-spin" />
-               <span className="text-xs tracking-widest text-muted-foreground uppercase">Cargando más cine...</span>
-             </div>
-           )}
+          {isLoading && (
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-10 h-10 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+              <span className="text-xs tracking-widest text-muted-foreground uppercase">Cargando más cine...</span>
+            </div>
+          )}
         </div>
 
         {/* Bottom indicator for fully loaded state */}
