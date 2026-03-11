@@ -13,7 +13,7 @@ interface GenreInfoPanelProps {
 
 export function GenreInfoPanel({ genres, activeIndex, stableActiveIndex, onNavigate }: GenreInfoPanelProps) {
   return (
-    <div className="hidden lg:flex flex-col justify-center px-12 w-[380px] shrink-0">
+    <div className="hidden lg:flex flex-col justify-start pt-12 px-12 w-[380px] shrink-0">
       <div className="space-y-6">
         <div className="animate-slide-in-left transform-gpu">
           <span className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground">
@@ -65,7 +65,7 @@ export function GenreInfoPanel({ genres, activeIndex, stableActiveIndex, onNavig
         </div>
 
         {/* Vertical Navigation */}
-        <div className="flex flex-col m-5 gap-2 pt-4">
+        {/* <div className="flex flex-col m-5 gap-2 pt-4">
           <Button
             variant="navcircle"
             size="nav"
@@ -84,7 +84,7 @@ export function GenreInfoPanel({ genres, activeIndex, stableActiveIndex, onNavig
           >
             <ChevronDown className="w-4 h-4 text-foreground" />
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   )

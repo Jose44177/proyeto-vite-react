@@ -39,7 +39,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
   const [isStableActive, setIsStableActive] = useState(isActive)
-  
+
   // Utilizamos un ref para saber si es el renderizado inicial y aplicar el delay de cascada
   const isInitialMount = useRef(true)
 
@@ -61,7 +61,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
       observerCallbacks.set(el, () => setIsVisible(true))
       getObserver()?.observe(el)
     }
-    
+
     // Una vez que el componente se monta y pasa un poco de tiempo, quitamos el flag de "montaje inicial"
     // para que futuras interacciones no tengan el delay en cascada.
     const timeout = setTimeout(() => {
@@ -198,7 +198,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
 
           {/* Right: Decorative accent line */}
           {isStableActive && (
-            <div className="hidden md:flex flex-col items-center animate-fade-in transform-gpu">
+            <div className="hidden md:self-center md:flex flex-col items-center animate-fade-in transform-gpu">
               <div className="w-px h-20 bg-linear-to-b from-transparent via-primary to-transparent" />
               <span className="text-[10px] text-muted-foreground tracking-[0.3em] [writing-mode:vertical-rl]">
                 {genre.name.toUpperCase()}
