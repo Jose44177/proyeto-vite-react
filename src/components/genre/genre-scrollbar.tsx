@@ -1,4 +1,4 @@
- import type { Genre } from "@/types/genre"
+import type { Genre } from "@/types/genre"
 
 interface GenreScrollbarProps {
   genres: Genre[]
@@ -31,7 +31,7 @@ export function GenreScrollbar({
         {/* La "Cinta" que se desplaza con todos los puntos */}
         <div
           className={`
-            absolute flex transform-gpu transition-transform duration-300 ease-in-out
+            absolute flex transform-gpu transition-transform duration-400 ease-in-out
             ${isVertical
               ? "flex-col items-center w-full gap-4 translate-y-[calc(100px-28px*var(--i))]"
               : "flex-row items-center h-full gap-4 translate-x-[calc(100px-28px*var(--i))]"
@@ -42,7 +42,7 @@ export function GenreScrollbar({
           {/* Pastilla activa flotante — siempre centrada sobre el índice activo */}
           <div
             className={`
-              absolute bg-primary transform-gpu transition-transform duration-400 ease-in-out
+              absolute bg-primary transform-gpu transition-transform duration-500 ease-in-out
               ${isVertical
                 ? "left-1/2 -translate-x-1/2 top-0 w-0.5 h-8 translate-y-[calc(28px*var(--i))]"
                 : "top-1/2 -translate-y-1/2 left-0 h-0.5 w-8 translate-x-[calc(28px*var(--i))]"
@@ -61,7 +61,7 @@ export function GenreScrollbar({
                 bg-foreground/20 transform-gpu
                 ${i === activeIndex
                   ? isVertical ? "h-8 w-0.5" : "w-8 h-0.5"
-                  : isVertical ? "h-3 w-px"  : "w-3 h-px"
+                  : isVertical ? "h-3 w-px" : "w-3 h-px"
                 }
               `}
             />

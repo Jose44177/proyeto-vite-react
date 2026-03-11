@@ -1,8 +1,8 @@
 import { ChevronDown, ChevronUp } from "lucide-react"
-import { LineReveal } from "./ui/line-reveal"
+import { LineReveal } from "../ui/line-reveal"
 import type { Genre } from "@/types/genre"
 import { GenreScrollbar } from "./genre-scrollbar"
-import { Button } from "./ui/button"
+import { Button } from "../ui/button"
 
 interface GenreInfoPanelProps {
   genres: Genre[]

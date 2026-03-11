@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom"
 import { Play, Plus } from "lucide-react"
-import { Button } from "./ui/button"
+import { Button } from "../ui/button"
 import type { Genre } from "@/types/genre"
 
 let sharedObserver: IntersectionObserver | null = null
