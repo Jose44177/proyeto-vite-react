@@ -87,7 +87,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
         }
       }}
       className={`
-        group relative w-full overflow-hidden rounded-lg m-3
+        group relative w-[99%] overflow-hidden rounded-lg m-3
         transition-all duration-500 ease-in-out
         transform-gpu
         ${isActive ? "h-[420px] lg:h-[400px]" : "h-[110px] lg:h-[130px] cursor-pointer"}
@@ -109,30 +109,31 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
           src={genre.image}
           loading={index < 6 ? "eager" : "lazy"}
           decoding="async"
-          // alt={`${genre.name} genre backdrop`}
           className={`
-            absolute inset-0 w-full h-full object-cover transition-all
-            transform-gpu will-change-transform duration-[10s] ease-in-out
-            ${isStableActive ? "animate-ken-burns" : ""}
-            ${!isStableActive ? "brightness-[0.4] saturate-50" : "brightness-[0.7]"}
+            absolute inset-0 w-full h-full object-cover 
+            transition-[filter] will-change-[filter] transform-gpu ease-in-out
+            ${isStableActive ? "animate-ken-burns brightness-[0.8] saturate-100" : "brightness-[0.4] saturate-50"}
           `}
+          style={{
+            transitionDuration: "0.5s",
+          }}
         />
       </div>
 
       {/* Cinematic Gradient Overlays */}
       <div className="absolute inset-0 bg-linear-to-r from-background/90 via-background/40 to-transparent z-1" />
-      <div className="absolute inset-0 bg-linear-to-t from-background/80 via-transparent to-background/30 z-1" />
+      <div className="absolute inset-0 bg-linear-to-t from-background/60 via-transparent to-background/40 z-1" />
 
       {/* Film grain overlay */}
       <div
-        className="absolute inset-0 z-2 opacity-[0.03] pointer-events-none"
+        className="absolute inset-0 z-2 opacity-[0.03] pointer-events-none scale-105"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
         }}
       />
 
       {/* Content */}
-      <div className="relative z-3 flex h-full items-end p-6 md:p-8">
+      <div className="relative z-3 flex h-full items-end p-6 md:p-8 cursor-default">
         <div className="flex w-full items-end justify-between gap-4">
           {/* Left: Text Content */}
           <div className="flex-1">
@@ -198,7 +199,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
 
           {/* Right: Decorative accent line */}
           {isStableActive && (
-            <div className="hidden md:self-center md:flex flex-col items-center animate-fade-in transform-gpu">
+            <div className="hidden md:self-center md:flex flex-col items-center animate-fade-in transform-gpu cursor-default">
               <div className="w-px h-20 bg-linear-to-b from-transparent via-primary to-transparent" />
               <span className="text-[10px] text-muted-foreground tracking-[0.3em] [writing-mode:vertical-rl]">
                 {genre.name.toUpperCase()}

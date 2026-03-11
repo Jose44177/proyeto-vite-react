@@ -48,13 +48,14 @@ export function GenreCarousel() {
               genres={genres}
               activeIndex={activeIndex}
               orientation="vertical"
+            // size={500}
             />
           </div>
 
           {/* Contenedor de scroll interno */}
           <div
             ref={scrollContainerRef}
-            className="w-full max-w-3xl h-full mx-auto relative overflow-y-auto py-4 scrollbar-hide"
+            className="w-full max-w-7xl h-full mx-auto relative overflow-y-auto py-4 scrollbar-hide"
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",

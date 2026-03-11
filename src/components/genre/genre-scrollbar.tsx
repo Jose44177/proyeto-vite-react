@@ -17,24 +17,24 @@ export function GenreScrollbar({
 
   return (
     <div className={`pointer-events-none ${className}`}>
-      {/* Contenedor con máscara para recortar los extremos */}
+      {/* Contenedor con máscara — altura/ancho = 1/3 del viewport */}
       <div
         className={`
           relative overflow-hidden z-1
           transform-gpu will-change-transform
           ${isVertical
-            ? "w-4 h-[250px] mask-[linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]"
-            : "h-4 w-[250px] mask-[linear-gradient(to_right,transparent,black_25%,black_75%,transparent)]"
+            ? "w-4 h-[calc(100vh/2)] mask-[linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]"
+            : "h-4 w-[calc(250px)] mask-[linear-gradient(to_right,transparent,black_25%,black_75%,transparent)]"
           }
         `}
       >
-        {/* La "Cinta" que se desplaza con todos los puntos */}
+        {/* La "Cinta" — el offset del centro es la mitad del padre (1/6 del viewport) */}
         <div
           className={`
             absolute flex transform-gpu transition-transform duration-400 ease-in-out
             ${isVertical
-              ? "flex-col items-center w-full gap-4 translate-y-[calc(100px-28px*var(--i))]"
-              : "flex-row items-center h-full gap-4 translate-x-[calc(100px-28px*var(--i))]"
+              ? "flex-col items-center w-full gap-4 translate-y-[calc(100vh/4-28px*var(--i))]"
+              : "flex-row items-center h-full gap-4 translate-x-[calc(125px-28px*var(--i))]"
             }
           `}
           style={{ ["--i" as any]: activeIndex }}
@@ -51,7 +51,7 @@ export function GenreScrollbar({
             style={{ ["--i" as any]: activeIndex }}
           />
 
-          {/* Puntos — solo ~5 son visibles gracias a la máscara del padre */}
+          {/* Puntos */}
           {genres.map((_, i) => (
             <div
               key={i}
