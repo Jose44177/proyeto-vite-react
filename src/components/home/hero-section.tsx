@@ -42,7 +42,7 @@ export function HeroSection() {
 
           {/* Content */}
           <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20 max-w-4xl">
-            <div className="space-y-4 animate-fade-up">
+            <div className="flex flex-col items-start justify-end gap-3 animate-fade-up">
               <div className="flex items-center gap-3">
                 <span className="text-xs font-bold tracking-[0.3em] uppercase text-primary bg-primary/10 px-3 py-1 border-l-2 border-primary">
                   Featured Title
@@ -50,11 +50,11 @@ export function HeroSection() {
                 <span className="w-12 h-px bg-primary/30" />
               </div>
 
-              <h2 className="text-6xl md:text-8xl lg:text-9xl font-display leading-[0.8] tracking-tighter text-foreground drop-shadow-2xl">
+              <h2 className="text-6xl md:text-8xl lg:text-9xl font-display leading-[0.9] tracking-tight text-foreground drop-shadow-2xl">
                 {movie.title}
               </h2>
 
-              <div className="flex items-center gap-4 text-sm font-medium text-muted-foreground">
+              <div className="flex items-center mt-3 gap-4 text-sm font-medium text-muted-foreground">
                 <span className="text-primary">{movie.rating} Rating</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
                 <span>{movie.year}</span>

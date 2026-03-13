@@ -12,7 +12,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { useIsScrollable } from "@/hooks/useIsScrollable"
 
 interface HeaderProps {
   fixed?: boolean
@@ -22,14 +21,12 @@ const FixedHeader = ['Genres', 'Trending', 'New']
 
 export function Header({ fixed = true }: HeaderProps) {
   const { user, isLoggedIn, login, logout } = useAuth()
-  const [isScrolled, setIsScrolled] = useState(false)
-  const isScrollable = useIsScrollable()
-
-  const shouldShow = isScrollable ? isScrolled : true
+  const [isScrolled, setIsScrolled] = useState(!fixed)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(!fixed && window.scrollY > 50)
+      setIsScrolled(fixed && window.scrollY > 50)
+      document.querySelector("#glow-line")?.classList.toggle("animate-pulse-glow")
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
@@ -128,21 +125,18 @@ export function Header({ fixed = true }: HeaderProps) {
       </div>
 
       {/* Subtle bottom line reflecting glow */}
-      {
-        shouldShow && (
-          <div
-            className={`
-            ${isScrolled ? 'opacity-100' : 'opacity-0'} 
-            absolute bottom-0 left-0 w-full h-px 
-            bg-linear-to-r from-primary/5 via-primary/90 to-primary/5 
-            pointer-events-none animate-pulse-glow transform-gpu`
-            }
-            style={{
-              transitionDuration: '300ms'
-            }}
-          />
-        )
-      }
+      <div
+        key="glow-line"
+        className={`
+        ${!isScrolled ? 'opacity-0' : 'opacity-100'} 
+        absolute bottom-0 left-0 w-full h-px
+        bg-linear-to-r from-primary/5 via-primary/90 to-primary/5 
+        pointer-events-none transition-opacity transform-gpu`
+        }
+        style={{
+          transitionDuration: '300ms'
+        }}
+      />
     </header >
   )
 }
