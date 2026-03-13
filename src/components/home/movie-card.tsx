@@ -1,5 +1,7 @@
+import { useState } from "react"
 import { Play, Plus, Heart } from "lucide-react"
 import type { Movie } from "@/types/movie"
+import AddButon from "../ui/addButon"
 
 interface MovieCardProps {
   movie: Movie
@@ -7,28 +9,55 @@ interface MovieCardProps {
 }
 
 export function MovieCard({ movie, isPriority = false }: MovieCardProps) {
+  const [liked, setLiked] = useState(false)
+  const [pop, setPop] = useState(false)
+
+  const handleClick = () => {
+    setLiked(v => !v)
+
+    setPop(true)
+    setTimeout(() => setPop(false), 400)
+  }
+
   return (
-    <div className="group relative w-[160px] sm:w-[200px] md:w-[240px] aspect-2/3 shrink-0 cursor-pointer overflow-hidden transition-all duration-500 ease-out hover:scale-105 hover:z-30 rounded-sm">
+    <div className="group relative w-[160px] sm:w-[200px] md:w-[240px] aspect-2/3 shrink-0 cursor-pointer overflow-hidden transition-all duration-500 ease-out scale-95 hover:scale-100 hover:z-30 rounded-sm">
       {/* Poster Image */}
       <img
         src={movie.poster}
         alt={movie.title}
         loading={isPriority ? "eager" : "lazy"}
-        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        className="w-full h-full object-cover transition-transform ease-out duration-700 group-hover:scale-105"
       />
 
       {/* Hover Overlay */}
-      <div className="absolute inset-0 bg-linear-to-t from-background via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="absolute inset-0 bg-linear-to-t from-background via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out">
         <div className="absolute bottom-0 left-0 w-full p-3 md:p-4 space-y-2">
           <div className="flex items-center gap-2">
-            <button className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:scale-110 transition-transform">
+            <button className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:scale-110 transition-transform hover:rotate-120 duration-300 ease-in-out">
               <Play className="w-4 h-4 md:w-5 md:h-5 fill-current" />
             </button>
-            <button className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-secondary/80 text-foreground border border-foreground/10 flex items-center justify-center hover:scale-110 transition-transform hover:bg-secondary">
-              <Plus className="w-4 h-4 md:w-5 md:h-5" />
-            </button>
-            <button className="ml-auto w-8 h-8 md:w-10 md:h-10 rounded-full bg-secondary/80 text-foreground border border-foreground/10 flex items-center justify-center hover:scale-110 transition-transform hover:text-primary">
-              <Heart className="w-4 h-4 md:w-5 md:h-5" />
+            <AddButon />
+            <button
+              onClick={handleClick}
+              className={`
+                ml-auto w-8 h-8 md:w-10 md:h-10
+                rounded-full bg-secondary/80
+                border border-foreground/10
+                flex items-center justify-center
+                transition-transform hover:scale-110
+                ${!liked ? "hover:*:animate-heartbeat-like" : ""}
+              `}
+            >
+              {/* icon solo recibe la animación al hacer hover sobre el botón */}
+              <Heart
+                className={`
+                  w-4 h-4 md:w-5 md:h-5
+                  transition-all
+                  ${liked ? "fill-red-500 text-red-500" : "text-foreground"}
+                  ${pop ? "animate-like-pop" : ""}
+                `}
+              />
+
             </button>
           </div>
 
@@ -48,17 +77,19 @@ export function MovieCard({ movie, isPriority = false }: MovieCardProps) {
       </div>
 
       {/* Progress Bar (Continue Watching) */}
-      {movie.progress !== undefined && (
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-foreground/20 z-10">
-          <div
-            className="h-full bg-primary"
-            style={{ width: `${movie.progress}%` }}
-          />
-        </div>
-      )}
+      {
+        movie.progress !== undefined && (
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-foreground/20 z-10">
+            <div
+              className="h-full bg-primary"
+              style={{ width: `${movie.progress}%` }}
+            />
+          </div>
+        )
+      }
 
       {/* Borde sutil interactivo */}
       <div className="absolute inset-0 border border-white/0 group-hover:border-primary/30 transition-colors pointer-events-none" />
-    </div>
+    </div >
   )
 }

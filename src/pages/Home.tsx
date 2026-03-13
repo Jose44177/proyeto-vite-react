@@ -61,7 +61,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Main Content Area */}
-      <div className="relative z-10 -mt-16 md:-mt-32 space-y-12 pb-20">
+      <div className="relative flex flex-col gap-12 z-10 mx-6 md:mx-12">
 
         {/* Conditional Rows for Authenticated Users */}
         {isLoggedIn && (

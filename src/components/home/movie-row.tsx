@@ -62,14 +62,17 @@ export function MovieRow({ title, movies }: MovieRowProps) {
         </div>
       </div>
 
-      <div className="relative">
+      <div
+        className={`relative 
+        ${showLeft ? "mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]"
+            : "mask-[linear-gradient(to_right,black_0%,black_85%,transparent_100%)]"}`}>
         <div
           ref={rowRef}
           onScroll={handleScroll}
-          className="flex overflow-x-auto gap-4 px-6 md:px-12 scrollbar-none snap-x snap-mandatory pb-4"
+          className="flex overflow-x-auto overflow-y-hidden gap-4 mx-6 md:mx-12 scrollbar-none snap-x snap-mandatory"
         >
           {movies.map((movie, i) => (
-            <div key={movie.id} className="snap-start translate-y-8 opacity-0 animate-fade-up" style={{ animationDelay: `${i * 100}ms` }}>
+            <div key={movie.id} className="snap-start opacity-0 animate-fade-up" style={{ animationDelay: `${i * 100}ms` }}>
               <MovieCard movie={movie} />
             </div>
           ))}
