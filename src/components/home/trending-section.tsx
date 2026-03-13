@@ -1,7 +1,8 @@
 import { useRef, useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { TRENDING_MOVIES } from "@/data/movies"
-import { Play, Plus } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { TrendingRow } from "./trending-row"
 
 export function TrendingSection() {
   const rowRef = useRef<HTMLDivElement>(null)
@@ -29,6 +30,8 @@ export function TrendingSection() {
 
   useEffect(() => {
     handleScroll()
+    window.addEventListener("resize", handleScroll)
+    return () => window.removeEventListener("resize", handleScroll)
   }, [])
 
   return (
@@ -38,62 +41,39 @@ export function TrendingSection() {
           Top 10 <span className="text-primary truncate">en tu plataforma</span>
         </h2>
         <div className="flex items-center gap-2 opacity-0 group-hover/row:opacity-100 transition-opacity">
-          <button
+          <Button
+            variant={"navcircle"}
             disabled={!showLeft}
             onClick={() => scroll("left")}
-            className="w-10 h-10 flex items-center justify-center border border-foreground/10 hover:border-primary/50 text-muted-foreground hover:text-primary transition-all disabled:opacity-30 rounded-full"
+            className="w-5 h-auto"
           >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button
+            <ChevronLeft className="w-5 h-5" />
+          </Button>
+          <Button
+            variant={"navcircle"}
             disabled={!showRight}
             onClick={() => scroll("right")}
-            className="w-10 h-10 flex items-center justify-center border border-foreground/10 hover:border-primary/50 text-muted-foreground hover:text-primary transition-all disabled:opacity-30 rounded-full"
+            className="w-5 h-auto"
           >
-            <ChevronRight className="w-6 h-6" />
-          </button>
+            <ChevronRight className="w-5 h-5" />
+          </Button>
         </div>
       </div>
 
-      <div className="relative">
+      <div className={`relative 
+        ${showLeft ? "mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]"
+          : "mask-[linear-gradient(to_right,black_0%,black_85%,transparent_100%)]"}`}>
         <div
           ref={rowRef}
           onScroll={handleScroll}
-          className="flex overflow-x-auto gap-12 sm:gap-16 px-6 md:px-12 scrollbar-none pb-8 pt-4"
+          className="flex overflow-x-auto overflow-y-hidden gap-12 sm:gap-16 px-6 md:px-12 scrollbar-none pb-8 pt-4"
         >
           {TRENDING_MOVIES.map((movie, index) => (
-            <div
+            <TrendingRow
               key={movie.id}
-              className="relative shrink-0 w-[180px] sm:w-[220px] md:w-[260px] group cursor-pointer"
-            >
-              {/* Number Background */}
-              <span className="absolute -left-10 sm:-left-12 -bottom-2 sm:-bottom-4 text-[120px] sm:text-[160px] md:text-[200px] font-display leading-none text-transparent select-none z-10 opacit-80 transition-all duration-700 group-hover:-translate-x-4"
-                style={{ WebkitTextStroke: '2px rgba(255, 255, 255, 0.2)' }}>
-                {index + 1}
-              </span>
-
-              {/* Movie Poster */}
-              <div className="relative z-20 aspect-2/3 overflow-hidden rounded-xs border border-white/5 group-hover:border-primary/40 transition-all duration-500 shadow-2xl group-hover:shadow-[0_0_30px_rgba(245,158,11,0.2)]">
-                <img
-                  src={movie.poster}
-                  alt={movie.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                  <div className="flex gap-2 mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    <button className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                      <Play className="w-4 h-4 fill-current text-primary-foreground" />
-                    </button>
-                    <button className="w-8 h-8 rounded-full bg-secondary/80 flex items-center justify-center">
-                      <Plus className="w-4 h-4" />
-                    </button>
-                  </div>
-                  <h3 className="text-sm font-display tracking-widest uppercase truncate">{movie.title}</h3>
-                </div>
-              </div>
-            </div>
+              movie={movie}
+              index={index}
+            />
           ))}
           {/* Spacer for the end */}
           <div className="shrink-0 w-12 md:w-24" />

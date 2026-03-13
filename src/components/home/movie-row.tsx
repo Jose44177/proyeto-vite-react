@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { MovieCard } from "./movie-card"
 import type { Movie } from "@/types/movie"
+import { Button } from "@/components/ui/button"
 
 interface MovieRowProps {
   title: string
@@ -45,20 +46,22 @@ export function MovieRow({ title, movies }: MovieRowProps) {
           {title}
         </h2>
         <div className="flex items-center gap-2 opacity-0 group-hover/row:opacity-100 transition-opacity">
-          <button
+          <Button
+            variant={"navcircle"}
             disabled={!showLeft}
             onClick={() => scroll("left")}
-            className="w-8 h-8 flex items-center justify-center border border-foreground/10 hover:border-primary/50 text-muted-foreground hover:text-primary transition-all disabled:opacity-30"
+            className="w-5 h-auto"
           >
             <ChevronLeft className="w-5 h-5" />
-          </button>
-          <button
+          </Button>
+          <Button
+            variant={"navcircle"}
             disabled={!showRight}
             onClick={() => scroll("right")}
-            className="w-8 h-8 flex items-center justify-center border border-foreground/10 hover:border-primary/50 text-muted-foreground hover:text-primary transition-all disabled:opacity-30"
+            className="w-5 h-auto"
           >
             <ChevronRight className="w-5 h-5" />
-          </button>
+          </Button>
         </div>
       </div>
 
