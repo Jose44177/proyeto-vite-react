@@ -42,8 +42,8 @@ export function HeroSection() {
 
           {/* Content */}
           <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 lg:px-20 max-w-4xl">
-            <div className="flex flex-col items-start justify-end gap-3 animate-fade-up">
-              <div className="flex items-center gap-3">
+            <div className="flex flex-col items-start justify-start gap-6 animate-fade-up">
+              <div className="flex items-center gap-3 -mb-3">
                 <span className="text-xs font-bold tracking-[0.3em] uppercase text-primary bg-primary/10 px-3 py-1 border-l-2 border-primary">
                   Featured Title
                 </span>
@@ -54,7 +54,7 @@ export function HeroSection() {
                 {movie.title}
               </h2>
 
-              <div className="flex items-center mt-3 gap-4 text-sm font-medium text-muted-foreground">
+              <div className="flex items-center gap-4 text-sm font-medium text-muted-foreground">
                 <span className="text-primary">{movie.rating} Rating</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/40" />
                 <span>{movie.year}</span>
@@ -70,29 +70,29 @@ export function HeroSection() {
                 {movie.overview}
               </p>
 
-              <div className="flex flex-wrap items-center gap-4 pt-4">
-                <Button className="h-14 px-8 rounded-none font-display text-xl tracking-widest gap-2 bg-primary hover:bg-primary/90 text-primary-foreground group">
-                  <Play className="w-5 h-5 fill-current group-hover:scale-110 transition-transform" />
+              <div className="flex flex-wrap items-center gap-4">
+                <Button className="h-12 px-8 font-display text-xl tracking-widest hover:scale-105">
+                  <Play className="w-5 h-5 fill-current" />
                   Watch Now
                 </Button>
 
                 {isLoggedIn ? (
-                  <Button variant="outline" className="h-14 px-8 rounded-none font-display text-xl tracking-widest gap-2 border-foreground/20 hover:bg-foreground/5 text-foreground backdrop-blur-sm group">
-                    <Plus className="w-5 h-5 group-hover:rotate-90 transition-transform" />
+                  <Button variant="outline" className="h-12 px-8 font-display text-xl tracking-widest hover:bg-foreground/5 backdrop-blur-sm group">
+                    <Plus className="w-5 h-5 group-hover:rotate-90 transition-transform duration-300 ease-in-out transform-gpu" />
                     My List
                   </Button>
                 ) : (
                   <Button
                     variant="outline"
                     onClick={login}
-                    className="h-14 px-8 rounded-none font-display text-xl tracking-widest gap-2 border-primary/40 hover:bg-primary/5 text-primary backdrop-blur-sm group"
+                    className="h-12 px-8 font-display text-xl tracking-widest  border-primary/40 hover:bg-primary/5 hover:border-primary/80 hover:scale-105 text-primary backdrop-blur-sm"
                   >
                     <Plus className="w-5 h-5" />
                     Join to Save
                   </Button>
                 )}
 
-                <Button variant="ghost" className="h-14 px-6 rounded-none text-muted-foreground hover:text-foreground hover:bg-transparent flex items-center gap-2">
+                <Button variant="ghost" className="text-muted-foreground hover:text-foreground hover:bg-transparent flex items-center">
                   <Info className="w-5 h-5" />
                   Details
                 </Button>
@@ -104,18 +104,20 @@ export function HeroSection() {
 
       {/* Navigation Arrows */}
       <div className="absolute right-12 bottom-12 z-30 flex gap-4">
-        <button
+        <Button
+          variant={"navcircle"}
           onClick={prevSlide}
-          className="w-12 h-12 flex items-center justify-center border border-foreground/10 hover:border-primary/50 hover:bg-primary/5 text-muted-foreground hover:text-primary transition-all rounded-full backdrop-blur-sm"
+          className="w-11 h-11"
         >
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-        <button
+          <ChevronLeft className="" />
+        </Button>
+        <Button
+          variant={"navcircle"}
           onClick={nextSlide}
-          className="w-12 h-12 flex items-center justify-center border border-foreground/10 hover:border-primary/50 hover:bg-primary/5 text-muted-foreground hover:text-primary transition-all rounded-full backdrop-blur-sm"
+          className="w-11 h-11"
         >
-          <ChevronRight className="w-6 h-6" />
-        </button>
+          <ChevronRight className="" />
+        </Button>
       </div>
 
       {/* Slot Progress Indicators */}
@@ -124,7 +126,7 @@ export function HeroSection() {
           <button
             key={i}
             onClick={() => setActiveIndex(i)}
-            className={`h-1.5 transition-all duration-500 rounded-full ${i === activeIndex ? "w-12 bg-primary" : "w-4 bg-foreground/20 hover:bg-foreground/40"
+            className={`h-1.5 transition-all transform-gpu duration-500 rounded-full ${i === activeIndex ? "w-12 bg-primary" : "w-4 bg-foreground/20 hover:bg-foreground/40 cursor-pointer"
               }`}
           />
         ))}
