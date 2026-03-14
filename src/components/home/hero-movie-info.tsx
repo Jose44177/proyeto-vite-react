@@ -27,8 +27,7 @@ export function HeroMovieInfo({ movie, index, activeIndex, isLoggedIn, login }: 
 				<img
 					src={movie.backdrop}
 					alt={movie.title}
-					className={`w-full h-full object-cover brightness-[0.6] ${index === activeIndex ? "animate-ken-burns" : ""
-						}`}
+					className={`w-full h-full object-cover brightness-[0.6] ${index === activeIndex ? "animate-ken-burns" : ""}`}
 				/>
 				{/* Cinematic Overlays */}
 				<div className="absolute inset-0 bg-linear-to-r from-background via-background/20 to-transparent" />

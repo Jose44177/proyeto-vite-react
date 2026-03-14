@@ -20,7 +20,7 @@ export default function AddButton({ text = [], className }: AddButonProps) {
 						onClick={() => setChecked(!checked)}
 						className="h-12 px-8 font-display text-xl tracking-widest hover:bg-foreground/5 backdrop-blur-sm"
 					>
-						<div className="relative self-center h-5 w-5 mt-1.5 mr-2">
+						<div className="relative self-center h-5 w-5 mt-1.5 mr-2 -ml-2">
 							<span
 								className={`absolute transition-all duration-300 ease-in-out ${checked ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-50 rotate-45"}`}
 							>

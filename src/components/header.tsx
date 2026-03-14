@@ -93,14 +93,27 @@ export function Header({ fixed = true }: HeaderProps) {
                 {user?.name}
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem className="hover:text-black">
+              <DropdownMenuItem onClick={async () => {
+                const token = localStorage.getItem('trakt_token');
+
+                const res = await fetch('https://api.trakt.tv/users/me', {
+                  headers: { 
+                    'Content-Type': 'application/json', 
+                    'Authorization': `Bearer ${token}`,
+                    'trakt-api-key': import.meta.env.VITE_TRAKT_CLIENT_ID,
+                    'trakt-api-version': '2' 
+                  }
+                });
+
+                console.log('USUARIO: ', res) // quitar en producción
+              }}>
                 <User className="mr-2 h-4 w-4" /> Account
               </DropdownMenuItem>
-              <DropdownMenuItem className="hover:text-black">
+              <DropdownMenuItem>
                 <Bell className="mr-2 h-4 w-4" /> Notifications
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={logout} className="text-destructive hover:bg-destructive hover:text-white">
+              <DropdownMenuItem onClick={logout} className="text-destructive *:hover:bg-destructive *:hover:text-white">
                 <LogOut className="mr-2 h-4 w-4" /> Logout
               </DropdownMenuItem>
             </DropdownMenuContent>

@@ -3,6 +3,7 @@ import { AuthProvider } from './hooks/use-auth'
 import Home from './pages/Home'
 import GenrePage from './pages/GenrePage'
 import GenresPage from './pages/GenresPage'
+import { CallbackPage } from './pages/CallbackPage'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/genres" element={<GenresPage />} />
         <Route path='/genres/:id' element={<GenrePage />} />
+        <Route path='/callback' element={<CallbackPage />} />
       </Routes>
     </AuthProvider>
   )
