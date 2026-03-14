@@ -14,7 +14,7 @@ export function HeroSection() {
       setActiveIndex((prev) => (prev + 1) % FEATURED_MOVIES.length)
     }, 8000)
     return () => clearInterval(timer)
-  }, [])
+  }, [activeIndex])
 
   const nextSlide = () => setActiveIndex((prev) => (prev + 1) % FEATURED_MOVIES.length)
   const prevSlide = () => setActiveIndex((prev) => (prev - 1 + FEATURED_MOVIES.length) % FEATURED_MOVIES.length)

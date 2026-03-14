@@ -38,7 +38,7 @@ export function TrendingSection() {
     <div className="space-y-6 group/row py-8">
       <div className="flex items-center justify-between px-6 md:px-12">
         <h2 className="text-3xl md:text-4xl font-display tracking-widest uppercase text-foreground">
-          Top 10 <span className="text-primary truncate">en tu plataforma</span>
+          Top 10 <span className="text-primary truncate">en cinevo</span>
         </h2>
         <div className="flex items-center gap-2 opacity-0 group-hover/row:opacity-100 transition-opacity">
           <Button
