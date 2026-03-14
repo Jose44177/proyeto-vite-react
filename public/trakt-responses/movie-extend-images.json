@@ -1,0 +1,30 @@
+{
+  "title": "TRON: Legacy",
+  "year": 2010,
+  "ids": {
+    "trakt": 12601,
+    "slug": "tron-legacy-2010",
+    "imdb": "tt1104001",
+    "tmdb": 20526
+  },
+  "images": {
+    "fanart": [
+      "walter-r2.trakt.tv/images/movies/000/012/601/fanarts/medium/5aab754f58.jpg.webp"
+    ],
+    "poster": [
+      "walter-r2.trakt.tv/images/movies/000/012/601/posters/thumb/e0d9dd35c5.jpg.webp"
+    ],
+    "logo": [
+      "walter-r2.trakt.tv/images/movies/000/012/601/logos/medium/dbce70b4aa.png.webp"
+    ],
+    "clearart": [
+      "walter-r2.trakt.tv/images/movies/000/012/601/cleararts/medium/513a3688d1.png.webp"
+    ],
+    "banner": [
+      "walter-r2.trakt.tv/images/movies/000/012/601/banners/medium/71dc0c3258.jpg.webp"
+    ],
+    "thumb": [
+      "walter-r2.trakt.tv/images/movies/000/012/601/thumbs/medium/fcd7d7968c.jpg.webp"
+    ]
+  }
+}

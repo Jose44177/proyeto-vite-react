@@ -1,0 +1,1073 @@
+[
+    {
+        "title": "F1",
+        "year": 2025,
+        "ids": {
+            "trakt": 729817,
+            "slug": "f1-2025",
+            "imdb": "tt16311594",
+            "tmdb": 911430,
+            "plex": {
+                "guid": "61b0a23cc2629c42c5fe61cd",
+                "slug": "f1"
+            }
+        },
+        "tagline": "Let's ride.",
+        "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+        "runtime": 156,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=ge_ABjtYx88",
+        "homepage": "https://www.f1themovie.com",
+        "status": "released",
+        "rating": 7.81218,
+        "votes": 18188,
+        "comment_count": 209,
+        "updated_at": "2026-03-14T08:48:58.000Z",
+        "language": "en",
+        "languages": [
+            "da",
+            "en",
+            "de",
+            "es"
+        ],
+        "available_translations": [
+            "ar",
+            "bg",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "et",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "id",
+            "it",
+            "ja",
+            "ka",
+            "ko",
+            "lt",
+            "lv",
+            "mk",
+            "nl",
+            "no",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sr",
+            "sv",
+            "th",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "action",
+            "drama"
+        ],
+        "subgenres": [
+            "sports",
+            "sport-competition"
+        ],
+        "original_title": "F1",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/000/729/817/fanarts/medium/2934c87271.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/000/729/817/posters/medium/82fc3d3b0c.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/000/729/817/logos/medium/0fe7239dc7.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/000/729/817/banners/medium/717826f131.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/000/729/817/thumbs/medium/cc64572089.jpg.webp"
+            ],
+            "clearart": [
+                "media.trakt.tv/images/movies/000/729/817/cleararts/medium/142acdec0e.png.webp"
+            ]
+        },
+        "colors": {
+            "poster": [
+                "#B9BCBA",
+                "#353834"
+            ]
+        },
+        "released": "2025-06-27",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "PG-13"
+    },
+    {
+        "title": "Frankenstein",
+        "year": 2025,
+        "ids": {
+            "trakt": 854887,
+            "slug": "frankenstein-2025",
+            "imdb": "tt1312221",
+            "tmdb": 1062722,
+            "plex": {
+                "guid": "5d776e1651dd69001fe48a6e",
+                "slug": "frankenstein-2025"
+            }
+        },
+        "tagline": "Only monsters play God.",
+        "overview": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+        "runtime": 150,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=9WZllcEgWrM",
+        "homepage": "https://www.frankensteingdt.com",
+        "status": "released",
+        "rating": 7.58378,
+        "votes": 12628,
+        "comment_count": 149,
+        "updated_at": "2026-03-14T08:45:58.000Z",
+        "language": "en",
+        "languages": [
+            "da",
+            "en",
+            "fr"
+        ],
+        "available_translations": [
+            "ar",
+            "bg",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "id",
+            "it",
+            "ja",
+            "ka",
+            "ko",
+            "lt",
+            "mk",
+            "ms",
+            "nl",
+            "no",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sr",
+            "sv",
+            "th",
+            "tl",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "drama",
+            "horror",
+            "fantasy"
+        ],
+        "subgenres": [
+            "monster",
+            "supernatural",
+            "father-son-relationship",
+            "mad-scientist"
+        ],
+        "original_title": "Frankenstein",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/000/854/887/fanarts/medium/416772b451.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/000/854/887/posters/medium/c3504072ae.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/000/854/887/logos/medium/0923b3e14b.png.webp"
+            ],
+            "banner": [],
+            "thumb": [],
+            "clearart": [
+                "media.trakt.tv/images/movies/000/854/887/cleararts/medium/eb07128610.png.webp"
+            ]
+        },
+        "colors": {
+            "poster": [
+                "#B5A975",
+                "#2C1B17"
+            ]
+        },
+        "released": "2025-10-17",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "R"
+    },
+    {
+        "title": "The Housemaid",
+        "year": 2025,
+        "ids": {
+            "trakt": 1117195,
+            "slug": "the-housemaid-2025",
+            "imdb": "tt27543632",
+            "tmdb": 1368166,
+            "plex": {
+                "guid": "6444698339b14cd38176a513",
+                "slug": "the-housemaid-2025"
+            }
+        },
+        "tagline": "Discover what lies behind closed doors.",
+        "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
+        "runtime": 131,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=BqWH0KDqm3U",
+        "homepage": "https://thehousemaid.movie",
+        "status": "released",
+        "rating": 7.1798,
+        "votes": 6585,
+        "comment_count": 108,
+        "updated_at": "2026-03-14T08:46:33.000Z",
+        "language": "en",
+        "languages": [
+            "en"
+        ],
+        "available_translations": [
+            "az",
+            "bg",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "et",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hr",
+            "hu",
+            "id",
+            "it",
+            "ka",
+            "ko",
+            "lt",
+            "lv",
+            "nl",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sr",
+            "sv",
+            "th",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "thriller",
+            "mystery",
+            "drama"
+        ],
+        "subgenres": [
+            "psychological-thriller",
+            "dramatic",
+            "suspense-thriller"
+        ],
+        "original_title": "The Housemaid",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/001/117/195/fanarts/medium/9d746aebfd.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/001/117/195/posters/medium/eb491d79d8.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/001/117/195/logos/medium/81e8cccad1.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/001/117/195/banners/medium/047e6b7eba.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/001/117/195/thumbs/medium/7d914fc58c.jpg.webp"
+            ],
+            "clearart": [
+                "media.trakt.tv/images/movies/001/117/195/cleararts/medium/2bdd0c611d.png.webp"
+            ]
+        },
+        "colors": {
+            "poster": [
+                "#AF9856",
+                "#2F2B32"
+            ]
+        },
+        "released": "2025-12-19",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "R"
+    },
+    {
+        "title": "Karate Kid: Legends",
+        "year": 2025,
+        "ids": {
+            "trakt": 813190,
+            "slug": "karate-kid-legends-2025",
+            "imdb": "tt1674782",
+            "tmdb": 1011477,
+            "plex": {
+                "guid": "5d776c719ab5440021516b43",
+                "slug": "karate-kid-legends"
+            }
+        },
+        "tagline": "When masters unite a new legacy begins.",
+        "overview": "After a family tragedy, kung fu prodigy Li Fong is uprooted from his home in Beijing and forced to move to New York City with his mother. When a new friend needs his help, Li enters a karate competition – but his skills alone aren't enough. Li's kung fu teacher Mr. Han enlists original Karate Kid Daniel LaRusso for help, and Li learns a new way to fight, merging their two styles into one for the ultimate martial arts showdown.",
+        "runtime": 94,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=LhRXf-yEQqA",
+        "homepage": "https://karatekid.movie",
+        "status": "released",
+        "rating": 6.95285,
+        "votes": 5896,
+        "comment_count": 71,
+        "updated_at": "2026-03-14T08:45:31.000Z",
+        "language": "en",
+        "languages": [
+            "zh",
+            "en"
+        ],
+        "available_translations": [
+            "ar",
+            "az",
+            "bg",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "et",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "it",
+            "ja",
+            "ka",
+            "ko",
+            "lt",
+            "lv",
+            "nl",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sv",
+            "th",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "action",
+            "drama",
+            "adventure"
+        ],
+        "subgenres": [
+            "kung-fu",
+            "martial-arts",
+            "nostalgic"
+        ],
+        "original_title": "Karate Kid: Legends",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/000/813/190/fanarts/medium/9506be6a1f.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/000/813/190/posters/medium/1fc5ec632b.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/000/813/190/logos/medium/598a839998.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/000/813/190/banners/medium/bfae168029.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/000/813/190/thumbs/medium/2ca0335fad.jpg.webp"
+            ],
+            "clearart": [
+                "media.trakt.tv/images/movies/000/813/190/cleararts/medium/d391321c61.png.webp"
+            ]
+        },
+        "colors": {
+            "poster": [
+                "#C26B18",
+                "#471D0A"
+            ]
+        },
+        "released": "2025-05-30",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "PG-13"
+    },
+    {
+        "title": "Havoc",
+        "year": 2025,
+        "ids": {
+            "trakt": 502235,
+            "slug": "havoc-2025",
+            "imdb": "tt14123284",
+            "tmdb": 668489,
+            "plex": {
+                "guid": "5e35ecb85c231e003d1345a2",
+                "slug": "havoc-2025"
+            }
+        },
+        "tagline": "No law. Only disorder.",
+        "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
+        "runtime": 107,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=6txjTWLoSc8",
+        "homepage": "https://www.netflix.com/title/81330790",
+        "status": "released",
+        "rating": 6.28387,
+        "votes": 5742,
+        "comment_count": 92,
+        "updated_at": "2026-03-13T18:44:10.000Z",
+        "language": "en",
+        "languages": [
+            "en"
+        ],
+        "available_translations": [
+            "ar",
+            "bg",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "id",
+            "it",
+            "ja",
+            "ka",
+            "ko",
+            "lt",
+            "ms",
+            "nl",
+            "no",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sv",
+            "th",
+            "tl",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "action",
+            "thriller",
+            "crime",
+            "drama"
+        ],
+        "subgenres": [
+            "aggressive",
+            "detective",
+            "shootout",
+            "christmas",
+            "winter"
+        ],
+        "original_title": "Havoc",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/000/502/235/fanarts/medium/0b940f59fd.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/000/502/235/posters/medium/ff3cad7c07.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/000/502/235/logos/medium/3c324f62b8.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/000/502/235/banners/medium/6b4e67a350.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/000/502/235/thumbs/medium/4dd0b6383c.jpg.webp"
+            ],
+            "clearart": []
+        },
+        "colors": {
+            "poster": [
+                "#C38361",
+                "#211411"
+            ]
+        },
+        "released": "2025-04-25",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "R"
+    },
+    {
+        "title": "Marty Supreme",
+        "year": 2025,
+        "ids": {
+            "trakt": 1076665,
+            "slug": "marty-supreme-2025",
+            "imdb": "tt32916440",
+            "tmdb": 1317288,
+            "plex": {
+                "guid": "669748dc85be974cd2ab194c",
+                "slug": "marty-supreme-2025"
+            }
+        },
+        "tagline": "Dream big.",
+        "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+        "runtime": 150,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=s9gSuKaKcqM",
+        "homepage": "https://a24films.com/films/marty-supreme",
+        "status": "released",
+        "rating": 7.66253,
+        "votes": 4750,
+        "comment_count": 90,
+        "updated_at": "2026-03-14T08:48:05.000Z",
+        "language": "en",
+        "languages": [
+            "en",
+            "ja"
+        ],
+        "available_translations": [
+            "az",
+            "bg",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hr",
+            "hu",
+            "it",
+            "ja",
+            "ka",
+            "ko",
+            "lt",
+            "lv",
+            "nl",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sr",
+            "sv",
+            "th",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "drama"
+        ],
+        "subgenres": [
+            "amused",
+            "sports",
+            "1950s",
+            "pregnancy"
+        ],
+        "original_title": "Marty Supreme",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/001/076/665/fanarts/medium/ca133860cf.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/001/076/665/posters/medium/99eb58cb64.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/001/076/665/logos/medium/a4cc504319.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/001/076/665/banners/medium/dd2fab5421.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/001/076/665/thumbs/medium/988ac4d48a.jpg.webp"
+            ],
+            "clearart": []
+        },
+        "colors": {
+            "poster": [
+                "#CBB7AC",
+                "#3A231C"
+            ]
+        },
+        "released": "2025-12-19",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "R"
+    },
+    {
+        "title": "Materialists",
+        "year": 2025,
+        "ids": {
+            "trakt": 915211,
+            "slug": "materialists-2025",
+            "imdb": "tt30253473",
+            "tmdb": 1136867,
+            "plex": {
+                "guid": "656d427f26572a0d5f07586a",
+                "slug": "materialists"
+            }
+        },
+        "tagline": "Some people just want more.",
+        "overview": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+        "runtime": 116,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=9gjeXsTsxqY",
+        "homepage": "https://a24films.com/films/materialists",
+        "status": "released",
+        "rating": 6.23801,
+        "votes": 5067,
+        "comment_count": 78,
+        "updated_at": "2026-03-14T08:45:57.000Z",
+        "language": "en",
+        "languages": [
+            "en"
+        ],
+        "available_translations": [
+            "ar",
+            "az",
+            "bg",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "et",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hr",
+            "hu",
+            "it",
+            "ka",
+            "ko",
+            "lt",
+            "lv",
+            "nl",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sr",
+            "sv",
+            "th",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "romance",
+            "drama"
+        ],
+        "subgenres": [
+            "love-triangle",
+            "wedding",
+            "ex-boyfriend-ex-girlfriend-relationship"
+        ],
+        "original_title": "Materialists",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/000/915/211/fanarts/medium/aa384a9719.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/000/915/211/posters/medium/c324853838.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/000/915/211/logos/medium/6cf4ea6c20.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/000/915/211/banners/medium/d8896dc090.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/000/915/211/thumbs/medium/eee431c2e3.jpg.webp"
+            ],
+            "clearart": [
+                "media.trakt.tv/images/movies/000/915/211/cleararts/medium/2d25d5f134.png.webp"
+            ]
+        },
+        "colors": {
+            "poster": [
+                "#E8E2D9",
+                "#393536"
+            ]
+        },
+        "released": "2025-06-13",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "R"
+    },
+    {
+        "title": "Roofman",
+        "year": 2025,
+        "ids": {
+            "trakt": 1005789,
+            "slug": "roofman-2025",
+            "imdb": "tt4627382",
+            "tmdb": 1242419,
+            "plex": {
+                "guid": "5f40bfdf52f200004168e72e",
+                "slug": "roofman"
+            }
+        },
+        "tagline": "Based on actual events. And terrible decisions.",
+        "overview": "A former Army Ranger and struggling father turns to robbing McDonald’s restaurants by cutting holes in their roofs, earning him the nickname \"Roofman.\" After escaping prison, he secretly lives inside a Toys “R” Us for six months, surviving undetected while planning his next move. But when he falls for a divorced mom drawn to his undeniable charm, his double life begins to unravel, setting off a compelling and suspenseful game of cat and mouse as his past closes in.",
+        "runtime": 126,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=IHikM7vFXsA",
+        "homepage": "https://www.roofmanmovie.com",
+        "status": "released",
+        "rating": 7.12159,
+        "votes": 4581,
+        "comment_count": 47,
+        "updated_at": "2026-03-14T08:45:56.000Z",
+        "language": "en",
+        "languages": [
+            "en"
+        ],
+        "available_translations": [
+            "ar",
+            "bg",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "et",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hr",
+            "hu",
+            "it",
+            "ka",
+            "ko",
+            "lt",
+            "lv",
+            "nb",
+            "nl",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sl",
+            "sv",
+            "th",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "crime",
+            "drama",
+            "comedy"
+        ],
+        "subgenres": [
+            "true-crime"
+        ],
+        "original_title": "Roofman",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/001/005/789/fanarts/medium/b4e58fc85f.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/001/005/789/posters/medium/134eb6cf39.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/001/005/789/logos/medium/6bf939122b.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/001/005/789/banners/medium/d15fd7a007.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/001/005/789/thumbs/medium/c1fdce6126.jpg.webp"
+            ],
+            "clearart": []
+        },
+        "colors": {
+            "poster": [
+                "#FAC634",
+                "#7F7079"
+            ]
+        },
+        "released": "2025-10-10",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "R"
+    },
+    {
+        "title": "Nuremberg",
+        "year": 2025,
+        "ids": {
+            "trakt": 979297,
+            "slug": "nuremberg-2025",
+            "imdb": "tt29567915",
+            "tmdb": 1214931,
+            "plex": {
+                "guid": "6535c7c85e7b825c593535f4",
+                "slug": "nuremberg-2025"
+            }
+        },
+        "tagline": "Judgment is coming.",
+        "overview": "In postwar Germany, an American psychiatrist must determine whether Nazi prisoners are fit to go on trial for war crimes, and finds himself in a complex battle of intellect and ethics with Hermann Göring, Hitler's right-hand man.",
+        "runtime": 149,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=YWlCCVnZ4bo",
+        "homepage": "https://www.sonyclassics.com/film/nuremberg",
+        "status": "released",
+        "rating": 7.5889,
+        "votes": 3695,
+        "comment_count": 34,
+        "updated_at": "2026-03-13T18:46:05.000Z",
+        "language": "en",
+        "languages": [
+            "en",
+            "de"
+        ],
+        "available_translations": [
+            "bg",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "et",
+            "fa",
+            "fi",
+            "fr",
+            "he",
+            "hr",
+            "hu",
+            "it",
+            "ka",
+            "ko",
+            "lt",
+            "lv",
+            "nl",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sl",
+            "sr",
+            "sv",
+            "th",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "history",
+            "drama"
+        ],
+        "subgenres": [
+            "historical-drama",
+            "1940s"
+        ],
+        "original_title": "Nuremberg",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/000/979/297/fanarts/medium/a04fc3dfa9.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/000/979/297/posters/medium/b1ba17ae93.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/000/979/297/logos/medium/194e8ccaf5.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/000/979/297/banners/medium/4527707fab.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/000/979/297/thumbs/medium/42821660c6.jpg.webp"
+            ],
+            "clearart": [
+                "media.trakt.tv/images/movies/000/979/297/cleararts/medium/53afac0a2e.png.webp"
+            ]
+        },
+        "colors": {
+            "poster": [
+                "#B4B4AC",
+                "#3E4643"
+            ]
+        },
+        "released": "2025-11-07",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "PG-13"
+    },
+    {
+        "title": "The Life of Chuck",
+        "year": 2025,
+        "ids": {
+            "trakt": 673173,
+            "slug": "the-life-of-chuck-2025",
+            "imdb": "tt12908150",
+            "tmdb": 842924,
+            "plex": {
+                "guid": "5f6c935b5882ed0044ae94cc",
+                "slug": "the-life-of-chuck"
+            }
+        },
+        "tagline": "Every life is a universe all its own.",
+        "overview": "In this extraordinary story of an ordinary man, Charles 'Chuck' Krantz experiences the wonder of love, the heartbreak of loss, and the multitudes contained in all of us.",
+        "runtime": 111,
+        "country": "us",
+        "trailer": "https://youtube.com/watch?v=jlN1Mmj6YNo",
+        "homepage": "https://www.neonrated.com/film/the-life-of-chuck",
+        "status": "released",
+        "rating": 7.39127,
+        "votes": 3527,
+        "comment_count": 56,
+        "updated_at": "2026-03-14T08:42:50.000Z",
+        "language": "en",
+        "languages": [
+            "en"
+        ],
+        "available_translations": [
+            "ar",
+            "bg",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "et",
+            "fa",
+            "fr",
+            "he",
+            "hr",
+            "hu",
+            "it",
+            "ja",
+            "ka",
+            "ko",
+            "lt",
+            "lv",
+            "nl",
+            "pl",
+            "pt",
+            "ro",
+            "ru",
+            "sl",
+            "sr",
+            "sv",
+            "tr",
+            "uk",
+            "vi",
+            "zh"
+        ],
+        "genres": [
+            "drama",
+            "fantasy"
+        ],
+        "subgenres": [
+            "death",
+            "slice-of-life",
+            "inspirational"
+        ],
+        "original_title": "The Life of Chuck",
+        "images": {
+            "fanart": [
+                "media.trakt.tv/images/movies/000/673/173/fanarts/medium/569dce59aa.jpg.webp"
+            ],
+            "poster": [
+                "media.trakt.tv/images/movies/000/673/173/posters/medium/3f2bbcb9b7.jpg.webp"
+            ],
+            "logo": [
+                "media.trakt.tv/images/movies/000/673/173/logos/medium/c11dbb005a.png.webp"
+            ],
+            "banner": [
+                "media.trakt.tv/images/movies/000/673/173/banners/medium/7a33f051d0.jpg.webp"
+            ],
+            "thumb": [
+                "media.trakt.tv/images/movies/000/673/173/thumbs/medium/ef876d8227.jpg.webp"
+            ],
+            "clearart": []
+        },
+        "colors": {
+            "poster": [
+                "#4697B9",
+                "#163148"
+            ]
+        },
+        "released": "2025-06-06",
+        "after_credits": false,
+        "during_credits": false,
+        "certification": "R"
+    }
+]

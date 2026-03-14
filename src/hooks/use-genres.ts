@@ -10,7 +10,12 @@ export function useGenres() {
       try {
         // Simulamos una llamada real que fallará
         const res = await fetch('https://api.trakt.tv/movies/genres', {
-          headers: { 'Content-Type': 'application/json' }
+          headers: { 
+            'Content-Type': 'application/json', 
+            'User-Agent':'peter/1.0.0',
+            // 'trakt-api-key': import.meta.env.VITE_trackt_client_id,
+            'trakt-api-version': '2' 
+          }
         });
         if (!res.ok) throw new Error("API call failed");
       } catch (error) {

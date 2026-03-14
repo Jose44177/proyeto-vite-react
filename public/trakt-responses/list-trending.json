@@ -1,0 +1,362 @@
+[
+    {
+        "like_count": 55,
+        "comment_count": 0,
+        "list": {
+            "name": "IMDB: Top Rated Movies",
+            "description": "Top 250 movies, as rated by regular IMDB voters. List updated daily.",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/2142753",
+            "type": "personal",
+            "display_numbers": true,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2016-04-11T20:13:18.000Z",
+            "updated_at": "2026-03-14T09:42:32.000Z",
+            "item_count": 250,
+            "comment_count": 6,
+            "likes": 4652,
+            "ids": {
+                "trakt": 2142753,
+                "slug": "imdb-top-rated-movies"
+            },
+            "user": {
+                "username": "justin",
+                "private": false,
+                "deleted": false,
+                "name": "Justin",
+                "vip": true,
+                "vip_ep": true,
+                "director": true,
+                "ids": {
+                    "slug": "justin"
+                }
+            }
+        }
+    },
+    {
+        "like_count": 39,
+        "comment_count": 0,
+        "list": {
+            "name": "Best Mindfucks",
+            "description": "What’s a mindfuck? A movie that plays with your mind, confuses you, and leads you on. It’s not just a movie with a twist ending. Mindfucks are borderline-incoherent, dreamlike, and surreal.",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/800238",
+            "type": "personal",
+            "display_numbers": false,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2012-06-30T23:29:30.000Z",
+            "updated_at": "2026-03-13T19:17:51.000Z",
+            "item_count": 116,
+            "comment_count": 69,
+            "likes": 3456,
+            "ids": {
+                "trakt": 800238,
+                "slug": "best-mindfucks"
+            },
+            "user": {
+                "username": "BenFranklin",
+                "private": false,
+                "deleted": false,
+                "name": "Ben",
+                "vip": true,
+                "vip_ep": false,
+                "director": false,
+                "ids": {
+                    "slug": "benfranklin"
+                }
+            }
+        }
+    },
+    {
+        "like_count": 38,
+        "comment_count": 0,
+        "list": {
+            "name": "IMDB: Top Rated TV Shows",
+            "description": "Top 250 TV shows, as rated by IMDB members.  List updated daily.",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/2143363",
+            "type": "personal",
+            "display_numbers": true,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2016-04-11T23:10:50.000Z",
+            "updated_at": "2026-03-14T09:42:39.000Z",
+            "item_count": 242,
+            "comment_count": 0,
+            "likes": 3547,
+            "ids": {
+                "trakt": 2143363,
+                "slug": "imdb-top-rated-tv-shows"
+            },
+            "user": {
+                "username": "justin",
+                "private": false,
+                "deleted": false,
+                "name": "Justin",
+                "vip": true,
+                "vip_ep": true,
+                "director": true,
+                "ids": {
+                    "slug": "justin"
+                }
+            }
+        }
+    },
+    {
+        "like_count": 26,
+        "comment_count": 0,
+        "list": {
+            "name": "2026 Digitally Released Movies",
+            "description": "**March**\r\n11 - Mexicali\r\n11 - This Is Not a Test\r\n10 - Solo Mio\r\n10 - Good Luck, Have Fun, Don't Die\r\n10 - The Testament of Ann Lee\r\n8 - Los Tigres\r\n8 - The Hermit\r\n7 - Subsuelo\r\n7 - Allly baqi mink AKA All That's Left of You\r\n7 - Down to the Felt\r\n6 - War Machine\r\n6 - Heel AKA Good Boy\r\n6 - Mother's Baby\r\n6 - Cold Storage\r\n6 - The Strangers: Chapter 3\r\n5 - Breve storia d'amore AKA A Brief Affair\r\n5 - Hell in Paradise\r\n5 - La Trequa AKA The Truce\r\n3 - The Chronology of Water\r\n3 - A Private Life\r\n3 - Whistle\r\n\r\n**February**\r\n28 - Giant\r\n27 - Squali\r\n27 - In the Blink of an Eye\r\n27 - Father Mother Sister Brother\r\n27 - Noseeums\r\n27 - Atropia\r\n25 - The Bluff\r\n24 - In Cold Light\r\n24 - Dead Man's Wire\r\n24 - Shelter\r\n24 - Return to Silent Hill\r\n24 - H Is for Hawk\r\n24 - Ice Skater AKA The Drift\r\n23 - Starbright\r\n20 - Singular\r\n20 - Cortafuego AKA Firebreak\r\n20 - Last Ride AKA A Rare Grand Alignment\r\n20 - One Mile: Chapter One\r\n20 - One Mile: Chapter Two\r\n20 - The Dreadful\r\n19 - La petite dernière AKA The Little Sister\r\n18 - Diabolic\r\n17 - Sheepdog\r\n17 - Me has robado el corazón AKA You Stole My Heart\r\n17 - Hellfire \r\n17 - Mercy\r\n17 - 28 Years Later: The Bone Temple\r\n16 - Ghost  Train\r\n13 - Honey Bunch\r\n13 - Love Me, Love Me\r\n13 - Benji's Hour\r\n13 - Sweetness\r\n12 - Deux pianos AKA Two Pianos\r\n11 - Reckless\r\n10 - I Was A Stranger\r\n10 - Is This Thing On?\r\n10 - Bight\r\n10 - Amrum\r\n10 - Primate\r\n10 - Rosemead\r\n10 - The Huntsman\r\n10 - Night Patrol\r\n10 - Misdirection\r\n9 - Marty Supreme\r\n8 - Teacher's Pet\r\n7 - F Valentine's Day \r\n6 - Redux Redux\r\n6 - The Arborist\r\n6 - Twisted\r\n4 - Relationship Goals\r\n3 - The Morrigan\r\n3 - The Secret Agent\r\n3 - The Housemaid\r\n3 - The Dutchman\r\n3 - Hamnet\r\n3 - We Bury the Dead\r\n3 - The Plague\r\n2 - Lure \r\n2 - Nachtvlinders AKA Night Creatures\r\n2 -  Det nye år AKA To New Beginnings\r\n\r\n**January:**\r\n31 - Tormento\r\n30 - Portal in the Pines\r\n30 - My Sister's Bones\r\n30 - Pike River\r\n29 - Smukkere AKA Pretty Young Love\r\n29 - Mountain King\r\n28 - The Wrecking Crew\r\n27 - Untitled Home Invasion Romance\r\n27 - Greenland 2: Migration\r\n27 - Anaconda\r\n26 - Silent Night, Deadly Night \r\n26 - Ella McCay\r\n23 - Grizzly Night\r\n23 - Black Spines\r\n23 - The Big Fake\r\n23 - Jack And Ava\r\n22 - Vi dör i natt AKA We Die Tonight\r\n20 - The Calling Witch\r\n20 - Chien 51 AKA Dog 51\r\n20 - The Eye\r\n20 - Savage Flowers\r\n19 - The Shrinking Man\r\n18 - In die Sonne schauen AKA Sound of Falling\r\n17 - 7 steg AKA 7 Steps\r\n17 - Dalloway AKA The Residence\r\n16  - El cautivo AKA The Captive\r\n16 - The Rip\r\n16 - The Confession\r\n16 - Killer Whale\r\n15 - Vieja loca AKA Crazy Old Lady\r\n14 - Beneath the Light\r\n13 - Space/Time\r\n13 - The Internship\r\n13 - Rebuilding\r\n13 - Song Sung Blue\r\n13 - Dust Bunny\r\n13 - Rental Family\r\n12 - Pillion\r\n12 - Relentless\r\n9 - Kevlarsjäl AKA Kevlar Soul\r\n9 - People We Meet on Vacation\r\n9 - Sleepwalker\r\n9 - Bulls\r\n8 - Play Dead\r\n8 - Parable\r\n6 - Self-Help\r\n6 - Joe Baby\r\n6 - Not Without Hope\r\n5 - Predator: Badlands\r\n3 - No Me Sigas AKA Don't Follow Me\r\n3 - Oscar Shaw\r\n2 - The Chaperone\r\n2 - Der Tiger AKA The Tank\r\n2 - Sigue mi voz AKA Follow My Voice",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/27019914",
+            "type": "personal",
+            "display_numbers": false,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "desc",
+            "created_at": "2024-02-07T17:34:15.000Z",
+            "updated_at": "2026-03-13T19:32:45.000Z",
+            "item_count": 134,
+            "comment_count": 0,
+            "likes": 151,
+            "ids": {
+                "trakt": 27019914,
+                "slug": "2026-digitally-released-movies"
+            },
+            "user": {
+                "username": "Dracid7",
+                "private": false,
+                "deleted": false,
+                "name": "Dracid",
+                "vip": true,
+                "vip_ep": false,
+                "director": false,
+                "ids": {
+                    "slug": "dracid7"
+                }
+            }
+        }
+    },
+    {
+        "like_count": 26,
+        "comment_count": 0,
+        "list": {
+            "name": "True Crime Documentary Series & Film",
+            "description": "This isn't intended to be a comprehensive list. I'm just going to be periodically updating this list with titles from the following IMDB search parameters:\r\n\r\nhttps://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_series,tv_episode,tv_special,tv_miniseries,documentary,short,tv_short&genres=crime,documentary\r\n\r\nUPDATED: March 09, 2026",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/11416887",
+            "type": "personal",
+            "display_numbers": false,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2020-04-22T16:53:27.000Z",
+            "updated_at": "2026-03-14T00:34:51.000Z",
+            "item_count": 503,
+            "comment_count": 6,
+            "likes": 1233,
+            "ids": {
+                "trakt": 11416887,
+                "slug": "true-crime-documentary-series-film"
+            },
+            "user": {
+                "username": "lish408",
+                "private": false,
+                "deleted": false,
+                "name": "LISH",
+                "vip": true,
+                "vip_ep": false,
+                "director": false,
+                "ids": {
+                    "slug": "lish408"
+                }
+            }
+        }
+    },
+    {
+        "like_count": 24,
+        "comment_count": 0,
+        "list": {
+            "name": "MARVEL Cinematic Universe",
+            "description": "**UPDATED** _2024-01-19_\r\n**Chronological order**                                                                                                             \r\n\r\n_(If you are new to MCU, then you should start with; Iron Man, The Incredible Hulk,\r\n                                                                                                                    Iron Man 2, Thor, Captain America and then Agent Carter.)_                                                                                                                                                                                                                                                                            \r\n\r\n\r\n-----------------------------------------------------------------------------\r\n\r\n**Includes:** \r\n\r\n- **All Movies**\r\n- **Marvel One-Shots**\r\n -  _Agent Carter_\r\n -  _A Funny Thing Happened on the Way to Thor's Hammer_\r\n -  _The Consultant_\r\n -  _Item 47_\r\n -  _All Hail the King_\r\n- **Specials/Shorts**\r\n -  _WHIH World News_\r\n -  _Slingshot_ \r\n- **Netflix Series**\r\n -  _**Marvel's** Daredevil_ \r\n -  _**Marvel's** Jessica Jones_\r\n -  _**Marvel's** Luke Cage_\r\n -  _**Marvel's** Iron Fist_\r\n -  _**Marvel's** Defenders_\r\n  -  _**Marvel's** The Punisher_\r\n- **ABC**\r\n - _**Marvel's** Inhumans_\r\n -  _**Marvel's** Agent Carter_\r\n - _**Marvel's** Agents of S.H.I.E.L.D._\r\n- **Hulu**\r\n - _**Marvel's** Runaways_\r\n- **Freeform**\r\n - _**Marvel's** Cloak & Dagger_\r\n\r\n-----------------------------------------------------------------------------\r\n\r\n**Stark Expo 1974** - commercial for Stark Expo 1974 in Flushing Meadows in New York.\r\nThere are four different **Stark Expo 2010** videos:\r\n\r\n -  Stark Expo 2010 - CordCo\r\n -  Stark Expo 2010 - Fujikawa\r\n -  Stark Expo 2010 - Better Living Through Technology\r\n -  Stark Expo 2010 - Accutech\r\n\r\nThey take place during Iron Man 2 and you can easily find them by googling for them.\r\n\r\n**Peggy Carter’s** 1953 Smithsonian Interview - Where Carter is being interviewed about Steve Rogers (can be found at youtube)\r\n\r\n**S.H.I.E.L.D** spin-off mini-series **Slingshot** can be found at ABC's youtube channel. \r\n\r\n**Peter's To-Do List** (Short Film - Spider-Man: Far From Home - Blu-Ray) - short extra clip when Peter is picking up his passport.\r\n\r\n**Novels**:\r\n\r\n- **Captain Marvel Vol. 1:** Higher, Further, Faster, More\r\n- **Marvel's Captain Marvel:** Starforce on the Rise\r\n- **Marvel's Avengers: Infinity War:** The Heroes' Journey\r\n- **Ant-Man and the Wasp** - The Heroes' Journey\r\n- **Marvel's Avengers: Infinity War:** The Cosmic Quest Vol. 1: Beginning\r\n- **Marvel's Avengers: Endgame:** The Pirate Angel, the Talking Tree, and Captain Rabbit\r\n- **Avengers - Infinity War:** The Cosmic Quest - Volume Two: Aftermath\r\n- **Spider-Man - Far From Home:** Peter and Ned's Ultimate Travel Journal\r\n\r\n-----------------------------------------------------------------------------\r\n_(haven't updated the tie-in comics)_\r\n_**Marvel Cinematic Universe** (#1-4) tie-in comics_ :\r\n\r\n- **Avengers: Road to Marvel's The Avengers**:\r\n - Iron Man: I Am Iron Man! #1-2\r\n - Iron Man 2: Public Identity #1-3\r\n - Iron Man 2: Agents of S.H.I.E.L.D. #1\r\n - Captain America: First Vengeance #1-4\r\n- **Marvel's The Avengers Prelude: Fury's Big Week**:\r\n - The Avengers - Prelude: Fury's Big Week #1-4\r\n- **Marvel's The Avengers Prelude: Black Widow Strikes**:\r\n - The Avengers - Prelude: Black Widow Strikes #1-3\r\n- **Marvel's Iron Man 3 Prelude**:\r\n - Iron Man 2 Adaptation #1-2\r\n - Iron Man 3 Prelude #1-2\r\n- **Marvel's Thor: The Dark World Prelude**:\r\n - Thor Adaptation #1-2\r\n - Thor: The Dark World Prelude #1-2\r\n- **Marvel's Captain America: The Winter Soldier Prelude**:\r\n - Captain America: The First Avenger Adaptation #1-2\r\n - Captain America: The Winter Soldier Infinite #1\r\n- **Marvel's Guardians of the Galaxy Prelude**:\r\n - Guardians of the Galaxy – _Dangerous Prey Infinite #1_\r\n - Guardians of the Galaxy Prelude #1-2\r\n- **Marvel's Avengers: Age of Ultron Prelude**:\r\n - The Avengers Adaptation #1-2\r\n - Avengers: Age of Ultron – _This Sceptre'd Isle Infinite #1_\r\n- **Marvel's Ant-Man Prelude**:\r\n - Ant-Man Prelude #1-2\r\n - Ant-Man – Scott Lang: Small Time Infinite #1\r\n- **Marvel's Jessica Jones Prelude**:\r\n - Marvel's Jessica Jones #1\r\n- **Captain America: Civil War Prelude**:\r\n - Captain America: Civil War Prelude #1-4\r\n - Captain America: Civil War Prelude Infinite #1\r\n- **Doctor Strange Prelude**:\r\n - Marvel's Doctor Strange Prelude #1-2\r\n - Marvel's Doctor Strange Prelude Infinite Comic – The Zealot #1\r\n- **Guardians of the Galaxy Vol. 2 Prelude**:\r\n - Marvel's Guardians of the Galaxy Vol. 2 Prelude #1-2\r\n- **Spider-Man: Homecoming Prelude**:\r\n - Spider-Man: Homecoming Prelude #1-2\r\n- **Thor: Ragnarok Prelude**:\r\n - Marvel's Thor: Ragnarok Prelude #1-4\r\n- **Marvel's Black Panther Prelude**:\r\n - Marvel's Black Panther Prelude #1-2\r\n- **Marvel's Avengers: Infinity War Prelude**:\r\n - Avengers - Infinity War: Prelude #1-2\r\n- **Ant-Man and the Wasp Prelude**:\r\n - Ant-Man and the Wasp - Prelude #1-2\r\n- **Captain Marvel Prelude**:\r\n - Marvel's Captain Marvel Prelude #1\r\n- **Avengers: Endgame Prelude **:\r\n - Avengers: Endgame Prelude #1-3\r\n- **Spider-Man: Far From Home Prelude**:\r\n - Spider-Man: Far From Home Prelude #1-2\r\n- **Black Widow: Prelude**:\r\n - Black Widow: Prelude #1-2\r\n\r\n\r\n-----------------------------------------------------------------------------",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/1248149",
+            "type": "personal",
+            "display_numbers": true,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2015-07-16T14:59:57.000Z",
+            "updated_at": "2026-03-14T09:47:31.000Z",
+            "item_count": 216,
+            "comment_count": 35,
+            "likes": 5147,
+            "ids": {
+                "trakt": 1248149,
+                "slug": "marvel-cinematic-universe"
+            },
+            "user": {
+                "username": "Donxy",
+                "private": false,
+                "deleted": false,
+                "name": "Donxy",
+                "vip": false,
+                "vip_ep": true,
+                "director": false,
+                "ids": {
+                    "slug": "donxy"
+                }
+            }
+        }
+    },
+    {
+        "like_count": 18,
+        "comment_count": 0,
+        "list": {
+            "name": "1001 Greatest Movies of All Time",
+            "description": "/u/StopReadinMyUsername on reddit combined the average ratings (Critic's & Users) from IMDb, Rotten Tomatoes, Metacritic and Letterboxd, and then weighted and tweaked the results with general film data from iCheckMovies and IMDb to reveal the 1001 Greatest Movies of All Time.\r\n\r\nsource: http://redd.it/3hbiio",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/1282987",
+            "type": "personal",
+            "display_numbers": true,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2015-07-28T22:49:33.000Z",
+            "updated_at": "2026-03-14T09:43:14.000Z",
+            "item_count": 1001,
+            "comment_count": 5,
+            "likes": 2587,
+            "ids": {
+                "trakt": 1282987,
+                "slug": "1001-greatest-movies-of-all-time"
+            },
+            "user": {
+                "username": "captainnapalm",
+                "private": false,
+                "deleted": false,
+                "name": "Brendan Berg",
+                "vip": true,
+                "vip_ep": false,
+                "director": false,
+                "ids": {
+                    "slug": "captainnapalm"
+                }
+            }
+        }
+    },
+    {
+        "like_count": 17,
+        "comment_count": 0,
+        "list": {
+            "name": "Harry Potter Collection",
+            "description": "The Harry Potter films are a fantasy series based on the series of seven Harry Potter novels by British writer J. K. Rowling.\n\nhttps://themoviedb.org/collection/1241",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/84",
+            "type": "official",
+            "display_numbers": true,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2014-09-28T19:00:04.000Z",
+            "updated_at": "2026-03-14T09:45:25.000Z",
+            "item_count": 8,
+            "comment_count": 0,
+            "likes": 212,
+            "ids": {
+                "trakt": 84,
+                "slug": "harry-potter-collection"
+            },
+            "user": {
+                "username": "Trakt",
+                "private": false,
+                "deleted": false,
+                "name": "Trakt",
+                "vip": false,
+                "vip_ep": false,
+                "director": false,
+                "ids": {
+                    "slug": null
+                }
+            }
+        }
+    },
+    {
+        "like_count": 14,
+        "comment_count": 0,
+        "list": {
+            "name": "Psychosexual dramas, nihilistic fever dreams & surrealism with a touch of humour [Imported]",
+            "description": "> To comfort the disturbed and to disturb the comfortable.\r\n\r\nImported from https://letterboxd.com/magrosleau/list/psychosexual-dramas-nihilistic-fever-dreams/. List originally assembled by 'magrosleau'.\r\n\r\n50+ didn't import (adult flag).",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/31918940",
+            "type": "personal",
+            "display_numbers": false,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2025-07-19T19:54:36.000Z",
+            "updated_at": "2026-03-12T21:23:54.000Z",
+            "item_count": 2207,
+            "comment_count": 0,
+            "likes": 139,
+            "ids": {
+                "trakt": 31918940,
+                "slug": "psychosexual-dramas-nihilistic-fever-dreams-surrealism-with-a-touch-of-humour-imported"
+            },
+            "user": {
+                "username": "sp1ti",
+                "private": false,
+                "deleted": false,
+                "name": "sp1ti",
+                "vip": true,
+                "vip_ep": false,
+                "director": false,
+                "ids": {
+                    "slug": "sp1ti"
+                }
+            }
+        }
+    },
+    {
+        "like_count": 14,
+        "comment_count": 0,
+        "list": {
+            "name": "James Bond Collection",
+            "description": "The James Bond Collection is a legendary spy film series based on Ian Fleming’s novels, following MI6 agent 007, James Bond, as he takes on global threats with style, gadgets, and charm. Produced by EON Productions, the franchise spans 25 official films (1962–2021) and has featured six actors, from Sean Connery to Daniel Craig. Known for its thrilling action, iconic villains, Bond girls, and unforgettable theme songs, the series remains a cornerstone of the spy genre. With espionage, luxury cars, and shaken-not-stirred martinis, Bond continues to captivate audiences worldwide.\n\nhttps://themoviedb.org/collection/645",
+            "privacy": "public",
+            "share_link": "https://trakt.tv/lists/41",
+            "type": "official",
+            "display_numbers": true,
+            "allow_comments": true,
+            "sort_by": "rank",
+            "sort_how": "asc",
+            "created_at": "2014-09-28T18:42:42.000Z",
+            "updated_at": "2026-03-14T09:41:29.000Z",
+            "item_count": 27,
+            "comment_count": 0,
+            "likes": 276,
+            "ids": {
+                "trakt": 41,
+                "slug": "james-bond-collection"
+            },
+            "user": {
+                "username": "Trakt",
+                "private": false,
+                "deleted": false,
+                "name": "Trakt",
+                "vip": false,
+                "vip_ep": false,
+                "director": false,
+                "ids": {
+                    "slug": null
+                }
+            }
+        }
+    }
+]
