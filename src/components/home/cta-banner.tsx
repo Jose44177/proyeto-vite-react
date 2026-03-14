@@ -31,12 +31,12 @@ export function CtaBanner() {
           <Button
             onClick={login}
             size="lg"
-            className="rounded-none font-display text-xl tracking-widest px-10 h-14 bg-primary hover:scale-105 transition-transform"
+            className="font-display text-xl tracking-widest px-10 h-14 bg-primary hover:scale-105 transition-transform"
           >
             Empezar Gratis
           </Button>
           <Button
-            variant="ghost"
+            variant="outline"
             className="group text-muted-foreground hover:text-foreground h-14 px-8 text-xs tracking-widest uppercase font-bold"
           >
             Más Información
@@ -45,7 +45,7 @@ export function CtaBanner() {
         </div>
 
         {/* Bottom subtle glow */}
-        <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/40 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-px bg-linear-to-r from-transparent via-primary/40 to-transparent animate-pulse-glow" />
       </div>
     </section>
   )
