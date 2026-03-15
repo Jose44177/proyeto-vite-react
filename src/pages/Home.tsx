@@ -95,7 +95,7 @@ export default function Home() {
               El gradiente inferior lo funde con el fondo, reforzando
               la sensación de contenido oculto.
             */}
-            <div className="relative h-[160px] overflow-hidden -mt-8 pointer-events-none select-none">
+            <div className="relative h-40 overflow-hidden -mt-8 pointer-events-none select-none">
               {/* Capa de desenfoque + oscurecimiento */}
               <div className="absolute inset-0 bg-linear-to-b from-background/10 via-background/70 to-background backdrop-blur-sm z-10" />
               {/* Gradiente extra que "funde" el peek con el fondo de la página */}

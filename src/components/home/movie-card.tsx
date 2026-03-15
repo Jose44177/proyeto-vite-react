@@ -1,14 +1,15 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Play, Heart } from "lucide-react"
 import AddButon from "../ui/addButon"
 import type { MovieARWithPoster, Movie } from "@/types/movie"
 
 interface MovieCardProps {
   movie: MovieARWithPoster
+  index: number
   isPriority?: boolean
 }
 
-export function MovieCard({ movie, isPriority = false }: MovieCardProps) {
+export function MovieCard({ movie, index, isPriority = false }: MovieCardProps) {
   const [liked, setLiked] = useState(false)
   const [pop, setPop] = useState(false)
 
@@ -20,7 +21,13 @@ export function MovieCard({ movie, isPriority = false }: MovieCardProps) {
   }
 
   return (
-    <div className="group relative w-40 sm:w-50 md:w-60 aspect-2/3 shrink-0 cursor-pointer overflow-hidden transition-all duration-500 ease-out scale-95 hover:scale-100 hover:z-30 rounded-sm">
+    <div 
+    className={`group relative w-40 sm:w-50 md:w-60 aspect-2/3 shrink-0 cursor-pointer overflow-hidden opacity-0 transition-all duration-500 ease-out scale-95 hover:scale-100 hover:z-30 rounded-sm animate-fade-up`}
+    style={{
+      animationDelay: `${(index * 100)}ms`,
+      animationDuration: '700ms',
+    }}
+    >
       {/* Poster Image */}
       <img
         src={movie.poster_url}

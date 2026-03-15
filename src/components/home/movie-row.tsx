@@ -1,12 +1,12 @@
 import { useRef, useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { MovieCard } from "./movie-card"
-import type { Movie } from "@/types/movie"
+import type { MovieARWithPoster } from "@/types/movie"
 import { Button } from "@/components/ui/button"
 
 interface MovieRowProps {
   title: string
-  movies: Movie[]
+  movies: MovieARWithPoster[]
 }
 
 export function MovieRow({ title, movies }: MovieRowProps) {
@@ -75,8 +75,8 @@ export function MovieRow({ title, movies }: MovieRowProps) {
           className="flex overflow-x-auto overflow-y-hidden gap-4 mx-6 md:mx-12 scrollbar-none snap-x snap-mandatory"
         >
           {movies.map((movie, i) => (
-            <div key={movie.id} className="snap-start opacity-0 animate-fade-up" style={{ animationDelay: `${i * 100}ms` }}>
-              <MovieCard movie={movie} />
+            <div key={movie.ids.slug} className="snap-start">
+              <MovieCard movie={movie} index={i} />
             </div>
           ))}
           {/* Spacer for the end */}
