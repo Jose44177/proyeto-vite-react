@@ -1,0 +1,113 @@
+{
+    "title": "F1",
+    "year": 2025,
+    "ids": {
+        "trakt": 729817,
+        "slug": "f1-2025",
+        "imdb": "tt16311594",
+        "tmdb": 911430,
+        "plex": {
+            "guid": "61b0a23cc2629c42c5fe61cd",
+            "slug": "f1"
+        }
+    },
+    "tagline": "Let's ride.",
+    "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+    "runtime": 156,
+    "country": "us",
+    "trailer": "https://youtube.com/watch?v=ge_ABjtYx88",
+    "homepage": "https://www.f1themovie.com",
+    "status": "released",
+    "rating": 7.81213,
+    "votes": 18215,
+    "comment_count": 210,
+    "updated_at": "2026-03-14T16:54:08.000Z",
+    "language": "en",
+    "languages": [
+        "da",
+        "en",
+        "de",
+        "es"
+    ],
+    "available_translations": [
+        "ar",
+        "bg",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "et",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ka",
+        "ko",
+        "lt",
+        "lv",
+        "mk",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sr",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "vi",
+        "zh"
+    ],
+    "genres": [
+        "action",
+        "drama"
+    ],
+    "subgenres": [
+        "sports",
+        "sport-competition"
+    ],
+    "original_title": "F1",
+    "images": {
+        "fanart": [
+            "media.trakt.tv/images/movies/000/729/817/fanarts/medium/2934c87271.jpg.webp"
+        ],
+        "poster": [
+            "media.trakt.tv/images/movies/000/729/817/posters/medium/82fc3d3b0c.jpg.webp"
+        ],
+        "logo": [
+            "media.trakt.tv/images/movies/000/729/817/logos/medium/0fe7239dc7.png.webp"
+        ],
+        "banner": [
+            "media.trakt.tv/images/movies/000/729/817/banners/medium/717826f131.jpg.webp"
+        ],
+        "thumb": [
+            "media.trakt.tv/images/movies/000/729/817/thumbs/medium/cc64572089.jpg.webp"
+        ],
+        "clearart": [
+            "media.trakt.tv/images/movies/000/729/817/cleararts/medium/142acdec0e.png.webp"
+        ]
+    },
+    "colors": {
+        "poster": [
+            "#B9BCBA",
+            "#353834"
+        ]
+    },
+    "released": "2025-06-27",
+    "after_credits": false,
+    "during_credits": false,
+    "certification": "PG-13"
+}
