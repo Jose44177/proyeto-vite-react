@@ -3,7 +3,7 @@ import { Button } from "../ui/button"
 import { Check, Info, Play, Plus } from "lucide-react"
 
 import type { Movie } from "@/types/movie"
-import AddButton from "../ui/addButon"
+import AddButton from "../ui/add-button"
 
 interface MovieInfoProps {
 	movie: Movie,

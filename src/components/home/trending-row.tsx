@@ -1,4 +1,4 @@
-import AddButton from '@/components/ui/addButon'
+import AddButton from '@/components/ui/add-button'
 import { Play } from 'lucide-react'
 
 import type { Movie } from '@/types/movie'

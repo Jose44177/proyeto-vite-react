@@ -184,7 +184,7 @@ export function GenreCard({ genre, isActive, index, onClick }: GenreCardProps) {
                 ${isStableActive ? "max-h-20 opacity-100 mt-5" : "max-h-0 opacity-0 mt-0"}
               `}
             >
-              <Link to={`/genre/${genre.id}`}>
+              <Link to={`/genres/${genre.id}`}>
                 <Button className="tracking-wide rounded-sm">
                   <Play className="w-4 h-4 fill-current" />
                   Explore

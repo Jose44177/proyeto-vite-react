@@ -25,7 +25,7 @@ export function Header({ fixed = true }: HeaderProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(fixed && window.scrollY > 50)
+      setIsScrolled((fixed && window.scrollY > 50) || !fixed)
       document.querySelector("#glow-line")?.classList.toggle("animate-pulse-glow")
     }
     window.addEventListener("scroll", handleScroll)
@@ -97,11 +97,11 @@ export function Header({ fixed = true }: HeaderProps) {
                 const token = localStorage.getItem('trakt_token');
 
                 const res = await fetch('https://api.trakt.tv/users/me', {
-                  headers: { 
-                    'Content-Type': 'application/json', 
+                  headers: {
+                    'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`,
                     'trakt-api-key': import.meta.env.VITE_TRAKT_CLIENT_ID,
-                    'trakt-api-version': '2' 
+                    'trakt-api-version': '2'
                   }
                 });
 

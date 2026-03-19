@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
 import { Play, Heart } from "lucide-react"
-import AddButon from "../ui/addButon"
+import AddButon from "../ui/add-button"
 import type { MovieARWithPoster, Movie } from "@/types/movie"
+import { HeartButton } from "@/components/ui/heart-button"
 
 interface MovieCardProps {
   movie: MovieARWithPoster
@@ -11,22 +12,14 @@ interface MovieCardProps {
 
 export function MovieCard({ movie, index, isPriority = false }: MovieCardProps) {
   const [liked, setLiked] = useState(false)
-  const [pop, setPop] = useState(false)
-
-  const handleClick = () => {
-    setLiked(v => !v)
-
-    setPop(true)
-    setTimeout(() => setPop(false), 400)
-  }
 
   return (
-    <div 
-    className={`group relative w-40 sm:w-50 md:w-60 aspect-2/3 shrink-0 cursor-pointer overflow-hidden opacity-0 transition-all duration-500 ease-out scale-95 hover:scale-100 hover:z-30 rounded-sm animate-fade-up`}
-    style={{
-      animationDelay: `${(index * 100)}ms`,
-      animationDuration: '700ms',
-    }}
+    <div
+      className={`group relative w-40 sm:w-50 md:w-60 aspect-2/3 shrink-0 cursor-pointer overflow-hidden opacity-0 transition-all duration-500 ease-out scale-95 hover:scale-100 hover:z-9 rounded-sm animate-fade-up`}
+      style={{
+        animationDelay: `${(index * 100)}ms`,
+        animationDuration: '700ms',
+      }}
     >
       {/* Poster Image */}
       <img
@@ -44,28 +37,7 @@ export function MovieCard({ movie, index, isPriority = false }: MovieCardProps) 
               <Play className="w-4 h-4 md:w-5 md:h-5 fill-current" />
             </button>
             <AddButon />
-            <button
-              onClick={handleClick}
-              className={`
-                ml-auto w-8 h-8 md:w-10 md:h-10
-                rounded-full bg-secondary/80
-                border border-foreground/10
-                flex items-center justify-center
-                transition-transform hover:scale-110
-                ${!liked ? "hover:*:animate-heartbeat-like" : ""}
-              `}
-            >
-              {/* icon solo recibe la animación al hacer hover sobre el botón */}
-              <Heart
-                className={`
-                  w-4 h-4 md:w-5 md:h-5
-                  transition-all
-                  ${liked ? "fill-red-500 text-red-500" : "text-foreground"}
-                  ${pop ? "animate-like-pop" : ""}
-                `}
-              />
-
-            </button>
+            <HeartButton liked={liked} onToggle={() => setLiked(v => !v)} />
           </div>
 
           <div className="space-y-1">

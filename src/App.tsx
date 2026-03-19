@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/genres" element={<GenresPage />} />
-          <Route path='/genre/:id' element={<InfiniteMovieGrid />} />
+          <Route path='/genres/:id' element={<InfiniteMovieGrid />} />
           <Route path='/callback' element={<CallbackPage />} />
         </Routes>
       </AuthProvider>
